@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+/* Style the custom-accordion section */
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #d2d2d4;
+  border: 1px solid rgba(198, 199, 201, 0.4);
+  background-color: rgba(198, 199, 201, 0.15);
+  margin-bottom: 10px;
+  /* Style the buttons that are used to open and close the custom-accordion panel */
+  @mixin custom-accordion {
+    height: 70px;
+    background-color: rgba(198, 199, 201, 0.15);
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+    padding: 0px;
+  }
+
+  .custom-accordion-without-chevron {
+    @include custom-accordion();
+    padding-right: 34px;
+  }
+  .custom-accordion-with-chevron {
+    @include custom-accordion();
+    padding-right: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+  .custom-accordion-with-chevron.active {
+    .accordion-header-title {
+      font-weight: 500;
+    }
+  }
+  .chevron-icon {
+    width: 17px;
+    height: 10.23px;
+  }
+  button:focus {
+    border: 1px solid rgba(0, 70, 127, 0.4);
+  }
+
+  /* Style the custom-accordion chevron icon */
+  .accordion__icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+    transform: rotate(180deg);
+  }
+  /* Style to rotate icon when state is active */
+  .rotate {
+    transform: rotate(360deg);
+  }
+  /* Style the custom-accordion content panel. Note: hidden by default */
+  .accordion__content {
+    background-color: white;
+    overflow: auto;
+    transition: max-height 0.6s ease;
+    overflow-y: hidden;
+  }
+}

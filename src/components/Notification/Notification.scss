@@ -1,0 +1,56 @@
+.popover.notification-popover {
+  width: 280px;
+  border-radius: 4px;
+  box-shadow: -10px 9px 21px 0 rgba(128, 152, 213, 0.08);
+  background-color: #ffffff;
+  left: -99px !important;
+  top: 10px !important;
+  .arrow {
+    transform: translate(225px, 0px) !important;
+  }
+
+  .popover-body {
+    box-sizing: border-box;
+    padding: 20px 20px 18px;
+    min-height: 248px;
+  }
+
+  .clr-btn {
+    background: none;
+    border: none;
+    //box-shadow: none;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: #00467f;
+    &:focus {
+      outline: none; // for making the focus go away
+    }
+  }
+
+  .btn-container {
+    padding-left: 10px;
+    padding-bottom: 11px;
+  }
+
+  .notification-container .message {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #686868;
+    p {
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(104, 104, 104, 0.6);
+      margin-top: 5px;
+    }
+  }
+}

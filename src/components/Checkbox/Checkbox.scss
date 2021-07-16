@@ -1,0 +1,61 @@
+.checkbox-component {
+  display: flex;
+  flex-direction: column;
+  .input-label {
+    color: #595959;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 0.98px;
+    line-height: 14px;
+    text-transform: uppercase;
+    &.error {
+      color: #fc5e34;
+    }
+    &.label-text-bold {
+      font-weight: 700;
+    }
+  }
+  .checkbox-input {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #979797;
+    //border: 1px solid #b2b2b5;
+    border-radius: 3px;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+    padding: 4px 3px 5px 3px;
+    //display: inline-block;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+
+    &:checked {
+      border-radius: 3px;
+      background-color: #161038;
+      &:disabled {
+        background-color: #979797;
+      }
+    }
+    &:checked:after {
+      content: 'L';
+      font-size: 14px;
+
+      position: absolute;
+
+      top: -1px;
+      left: 5px;
+      color: #ffffff;
+      /* rotate the mirrored L to make it a checkbox */
+      -ms-transform: scaleX(-1) rotate(-35deg); /* IE 9 */
+      -webkit-transform: scaleX(-1) rotate(-35deg); /* Chrome, Safari, Opera */
+      transform: scaleX(-1) rotate(-35deg);
+    }
+    &:disabled {
+      cursor: auto;
+    }
+  }
+}

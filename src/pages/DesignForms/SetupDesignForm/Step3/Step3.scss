@@ -1,0 +1,48 @@
+@import '../../../../styles/main.scss';
+@import '../../../../styles/table.scss';
+
+#step-3-design-form {
+  @mixin table-border {
+    border-bottom: 1px solid #d2d2d4;
+    border-left: 1px solid #d2d2d4;
+    border-right: 1px solid #d2d2d4;
+  }
+  .sections-form-data-table {
+    .with-two-column {
+      .rdt_TableHeadRow :nth-child(3) {
+        max-width: 300px;
+        overflow: hidden;
+      }
+    }
+    .card-list-table {
+      .rdt_TableCol {
+        @include width-and-margin-of-table-column();
+      }
+      .rdt_TableCol:first-child {
+        @include max-width-of-first-column();
+      }
+      .rdt_TableCell {
+        @include width-and-margin-of-table-column();
+      }
+      .rdt_TableCell .form-field {
+        width: 100%;
+        flex-direction: column;
+      }
+      .rdt_TableCell:first-child {
+        @include max-width-of-first-column();
+      }
+    }
+    .rdt_TableHead {
+      @include table-border();
+    }
+    .rdt_TableRow {
+      @include table-border();
+    }
+  }
+  .add-more-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

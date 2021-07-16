@@ -1,0 +1,73 @@
+@import '../../../../styles/main.scss';
+
+.unit-details {
+  .unit-details-card {
+    @include card-container;
+    margin-bottom: 30px;
+    .edit-btn-div {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      .edit-btn {
+        @include clickable-icon-btn;
+      }
+    }
+    .unit-details-section {
+      margin-top: 30px;
+      .area-total-div {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1100px;
+        .area-total {
+          display: flex;
+          align-items: center;
+          padding: 0px 10px;
+          justify-content: space-between;
+          width: 33%;
+          height: 62px;
+          border-bottom: 1px solid #d2d2d4;
+          span {
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #595959;
+          }
+        }
+      }
+      .add-more-row {
+        display: flex;
+        //max-width: 1100px;
+        margin-top: 30px;
+        justify-content: flex-end;
+      }
+    }
+    .unit-details-dropdown {
+      width: 191px;
+      @include largeDevice {
+        width: calc(191px + 2vw);
+      }
+    }
+    .delete-button {
+      @include clickable-icon-btn;
+    }
+    .unit-details-save {
+      @include btn-group;
+      margin-top: 30px;
+      .btn-cancel {
+        @include btn-cancel;
+        margin-right: 10px;
+      }
+      .btn-save-close {
+        @include btn-save-close;
+        margin-right: 10px;
+      }
+      .btn-save-submit {
+        @include btn-save-submit;
+      }
+    }
+  }
+}

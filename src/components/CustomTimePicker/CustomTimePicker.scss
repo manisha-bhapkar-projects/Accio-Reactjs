@@ -1,0 +1,89 @@
+$Arrow: url('../../images/arrow/up-down.png');
+
+.rc-time-picker-panel-select {
+  min-height: 240px !important;
+  max-height: 240px !important;
+}
+.custome-time-picker-component {
+  .rc-time-picker-input {
+    box-sizing: border-box;
+    height: 42px;
+    border: 1px solid #b2b2b5;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #595959;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    word-break: normal;
+    background-color: transparent !important;
+    background: $Arrow;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+  .rc-time-picker {
+    .rc-time-picker-clear {
+      display: none;
+    }
+  }
+  .input-label {
+    color: #595959;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 0.98px;
+    line-height: 14px;
+    // width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    &.error {
+      color: #fc5e34;
+    }
+  }
+  .form-controls {
+    box-sizing: border-box;
+    height: 42px;
+    clear: both;
+    vertical-align: bottom;
+    // border: 1px solid #b2b2b5;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #595959;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    word-break: normal;
+    &.disabled {
+      color: #252526 !important;
+      font-weight: 400;
+      pointer-events: none;
+      height: 32px;
+      background-color: #f7f9fe;
+    }
+    &.error {
+      border-color: #fc5e34;
+    }
+  }
+  .helper-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #595959;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // display: block;
+    // text-overflow: ellipsis;
+    &.error {
+      color: #fc5e34;
+    }
+  }
+}

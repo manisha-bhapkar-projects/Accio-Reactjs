@@ -1,0 +1,128 @@
+@import '../../../../styles/form.scss';
+@import '../../../../styles/main.scss';
+
+#step-5-design-form {
+  display: flex;
+  flex-direction: column;
+  .design-form-language-switcher {
+    margin-top: 50px;
+  }
+  .label-text {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #595959;
+    letter-spacing: 1.15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .editor-content {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #595959;
+    line-height: 1.71;
+  }
+  .editor-content h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  ul,
+  ol,
+  p,
+  span,
+  pre,
+  div,
+  label {
+    font-family: Roboto;
+  }
+  .design-form-title {
+    margin-top: 10px;
+    width: fit-content;
+    .card-design-form-title {
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #c19d29;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+    .design-form-bottom-border {
+      width: 50%;
+      height: 3px;
+      opacity: 0.55;
+      border-radius: 2px;
+      background-color: #666666;
+      margin-top: 7px;
+      margin-left: 4px;
+    }
+  }
+  .sections-files {
+    padding-top: 30px;
+    .section-title {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #c19d29;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .files-to-submit {
+    display: flex;
+    flex-direction: row;
+    padding-top: 34px;
+    align-items: center;
+    .file-no {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #595959;
+      padding-right: 18px;
+    }
+    .file-input-box {
+      flex: 2;
+    }
+    .or-symbol {
+      flex: 1;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #595959;
+      text-transform: uppercase;
+    }
+    .ftp-location {
+      flex: 2;
+      min-width: 477px;
+      @include largeDevice() {
+        min-width: calc(477px + 2vw);
+      }
+      .ftp-text-area {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/main.scss';
+
+.new-unassigned-case-details {
+  .case-creation-buttons {
+    @include btn-group;
+    margin-top: 30px;
+    .btn-cancel {
+      @include btn-cancel;
+      margin-right: 10px;
+    }
+    .btn-save-close {
+      @include btn-save-close;
+      margin-right: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit;
+    }
+    .btn-cancel-case {
+      @include btn(42px, 141px);
+      @include btn-secondary;
+    }
+    .btn-put-case-on-hold {
+      @include btn(42px, 155px);
+      margin-left: 10px;
+      @include btn-secondary;
+    }
+  }
+}

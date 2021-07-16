@@ -1,0 +1,13 @@
+@import '../../styles/main.scss';
+
+.button-with-progress-bar {
+  .progress-icon {
+    position: absolute;
+  }
+  .button-class {
+    @include btn-save-submit();
+    justify-content: center;
+    display: flex;
+    margin-left: 10px;
+  }
+}

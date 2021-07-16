@@ -1,0 +1,66 @@
+@import '../../../styles/main.scss';
+
+.alert-box {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .alert-box-title-div {
+    .alert-box-title {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #13b43e;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+      &.error {
+        color: #fc6a3b;
+      }
+      &.information {
+        color: #b9b7c3;
+      }
+    }
+    .alert-box-bottom-border {
+      width: 52px;
+      height: 3px;
+      opacity: 0.55;
+      border-radius: 2px;
+      background-color: #666666;
+      margin: auto;
+    }
+  }
+  .alert-box-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+  }
+  .alert-message-label {
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center;
+  }
+  // Buttons
+  .alert-box-button-container {
+    @include btn-group();
+    padding-top: 30px;
+    .btn-cancel {
+      @include btn(40px, auto);
+      min-width: 62px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @include btn-secondary;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .btn-confirm {
+      @include btn(40px, auto);
+      @include btn-primary;
+      min-width: 62px;
+      padding-left: 15px;
+      padding-right: 15px;
+      cursor: pointer;
+    }
+  }
+}

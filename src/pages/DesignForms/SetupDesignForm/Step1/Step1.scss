@@ -1,0 +1,67 @@
+@import '../../../../styles/main.scss';
+
+#step1-form-desing {
+  display: flex;
+  flex-direction: column;
+  .form-name-field-inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    .input-field-text {
+      max-width: 332px;
+      @include largeDevice() {
+        max-width: calc(332px + 2vw);
+      }
+      flex: 1;
+      -webkit-box-flex: 0;
+      margin-right: 30px;
+    }
+    :last-child {
+      margin-right: 0px;
+    }
+  }
+  .dropdown-field-inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    .dropdown-field-input {
+      -webkit-box-flex: 0;
+      max-width: 243px;
+      @include largeDevice() {
+        max-width: calc(243px + 2vw);
+      }
+      min-width: 243px;
+      margin-right: 120px;
+    }
+  }
+}
+
+// For single language
+#step1-form-desing-one-language {
+  display: flex;
+  flex-direction: row;
+  .form-name-field-inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    .input-field-text {
+      width: 332px;
+      flex: 1;
+      -webkit-box-flex: 0;
+      margin-right: 50px;
+      :last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  .dropdown-field-inputs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    .dropdown-field-input {
+      -webkit-box-flex: 0;
+      min-width: 243px;
+      margin-right: 50px;
+    }
+  }
+}

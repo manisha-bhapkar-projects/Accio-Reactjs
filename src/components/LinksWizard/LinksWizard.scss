@@ -1,0 +1,25 @@
+@import '../../styles/main.scss';
+
+#links-wizard {
+  display: flex;
+  .links-wizard-step {
+    opacity: 0.48;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #595959;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &.current {
+      opacity: 1;
+      color: #00467f;
+      border-bottom: 3px solid #00467f;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+@import '../../../styles/main.scss';
+
+@include screen-1920-above {
+  .main-layout {
+    max-width: 1920px;
+
+    margin-left: calc((100vw - 1920px) / 2);
+    header {
+      max-width: 1920px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .main-layout {
+    float: left;
+    width: 100%;
+    background-color: #f5f6fa;
+    box-sizing: border-box;
+    min-height: 100vh;
+    header {
+      position: fixed;
+      float: left;
+      height: 98px;
+      width: 100%;
+      z-index: 1100;
+    }
+    .content {
+      flex-grow: 1;
+      margin-top: 98px;
+    }
+    .nav-left.sidebar-expanded {
+      position: fixed;
+      // height: 100%;
+      float: left;
+      //width: 11.4%;
+      width: 227px;
+      top: 98px;
+      overflow-x: hidden;
+      bottom: 50px;
+      cursor: pointer;
+      background: linear-gradient(90deg, #d3d3d4 210px, #f5f6fa 17px);
+    }
+    .nav-left.sidebar-expanded::-webkit-scrollbar {
+      width: 0;
+    }
+    .nav-left.sidebar-collapsed {
+      position: fixed;
+      // height: 100%;
+      float: left;
+      // width: 2.5%;
+      width: 60px;
+      top: 98px;
+      overflow-x: hidden;
+      bottom: 50px;
+      background: linear-gradient(90deg, #d3d3d4 45px, #f5f6fa 10px);
+    }
+    .nav-left.sidebar-collapsed::-webkit-scrollbar {
+      width: 0;
+    }
+    .middle-wrapper-section.sidebar-expanded {
+      float: left;
+      width: 85.3%;
+      margin: 98px 0px 0px 211px;
+    }
+
+    .middle-wrapper-section.sidebar-collapsed {
+      float: left;
+      width: 96.9%;
+      margin: 98px 0px 0px 45px;
+    }
+
+    .middle-layout {
+      float: left;
+      width: 100%;
+      margin: 0px;
+      padding: 30px 77px 100px 57px;
+      @include largeDevice {
+        padding: 30px 5.3% 100px 57px;
+      }
+      min-height: 936px;
+    }
+
+    .main-layout .middle-layout article {
+      float: left;
+      width: 100%;
+    }
+  }
+}
+
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+  .main-layout {
+    float: left;
+    width: 100%;
+    background-color: #f5f6fa;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    header {
+      position: fixed;
+      float: left;
+      height: 98px;
+      width: 100%;
+      z-index: 1100;
+    }
+    .content {
+      flex-grow: 1;
+      margin-top: 98px;
+    }
+
+    .nav-left.sidebar-expanded {
+      position: fixed;
+      height: 100%;
+      float: left;
+      //width: 20.7%;
+      width: 211px;
+      margin-top: 98px;
+      // background-color: #d3d3d4;
+    }
+
+    .nav-left.sidebar-collapsed {
+      position: fixed;
+      height: 100%;
+      float: left;
+      //width: 4.5%;
+      width: 45px;
+      margin-top: 98px;
+    }
+
+    .middle-wrapper-section.sidebar-expanded {
+      float: left;
+      width: 79.3%;
+      margin: 98px 0px 0px 211px;
+    }
+
+    .middle-wrapper-section.sidebar-collapsed {
+      float: left;
+      width: 95.5%;
+      margin: 98px 0px 0px 45px;
+    }
+
+    .middle-layout {
+      float: left;
+      width: 100%;
+      margin: 0px;
+      padding: 23px 30px 100px 45px;
+      min-height: 936px;
+    }
+
+    .main-layout .middle-layout article {
+      float: left;
+      width: 100%;
+    }
+  }
+}

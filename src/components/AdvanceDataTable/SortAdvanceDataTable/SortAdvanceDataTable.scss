@@ -1,0 +1,71 @@
+@import '../../../styles/table.scss';
+
+.sord-advance-data-table {
+  // styles using previous table.scss
+  .rdt_Table {
+    @include table-container;
+    .rdt_TableHead {
+      padding-left: 10px;
+      @include table-header-row;
+    }
+    .rdt_TableHeadRow {
+      @include table-header-row-main;
+      border: none;
+      .rdt_TableCol {
+        @include table-header-item;
+        // margin-right: 40px;
+        // max-width: 200px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0;
+        padding: 0px;
+        div div {
+          // for hide hover effect on table header item
+          color: #000000;
+        }
+        div span {
+          color: #000000;
+        }
+      }
+      .rdt_TableCol:last-child {
+        margin-right: 20px;
+      }
+    }
+    .rdt_TableBody {
+      .rdt_TableRow {
+        @include table-content-row;
+        padding-left: 10px;
+        .rdt_TableCell {
+          @include table-content-item;
+          // margin-right: 40px;
+          // max-width: 200px;
+          color: #595959;
+          font-family: Roboto;
+          font-size: 14px;
+          padding: 0px;
+        }
+        .rdt_TableCell:last-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  // to remove extra margin and padding
+  .sc-fznxsB {
+    margin: 0;
+    padding: 0;
+  }
+
+  // if data not found text will shown in left side
+  .sc-fzqARJ.icdHOq {
+    justify-content: flex-start;
+  }
+  .no-data-label {
+    color: gray;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

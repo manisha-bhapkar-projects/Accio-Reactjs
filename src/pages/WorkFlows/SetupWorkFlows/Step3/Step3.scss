@@ -1,0 +1,67 @@
+@import '../../../../styles/main.scss';
+
+#step-3 {
+  .step-3-title {
+    border: 2px solid #ababab;
+    font-family: Roboto;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 20px;
+    // padding-left: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .switch-container {
+    margin-left: -35px;
+  }
+  // .sc-fznxsB {
+  //   padding: 0px !important;
+  //   padding-top: 25px !important;
+  // }
+
+  // #column-undefined:first-child {
+  //   margin-right: -10px !important;
+  // }
+
+  // .margin-left-text {
+  //   margin-left: 35px;
+  // }
+  .rdt_Table .rdt_TableHeadRow .rdt_TableCol:nth-child(2) {
+    // min-width: 30% !important;
+    // max-width: 30% !important;
+    // padding-left: 70px;
+    // padding-right: 70px;
+
+    #column-undefined {
+      margin-left: -10px !important;
+    }
+  }
+  .ccOrJB {
+    // margin-left: auto;
+    // margin-right: 50px !important;
+    img {
+      opacity: 0.7;
+    }
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  // .sc-fznxsB {
+  //   margin-top: -25px;
+  // }
+
+  // .rdt_Table .rdt_TableBody .rdt_TableRow .rdt_TableCell {
+  //   margin-right: 0px;
+  //   &:nth-child(2),
+  //   &:nth-child(3) {
+  //     margin-left: 50px;
+  //     // margin-right: auto;
+  //   }
+  //   // &:nth-child(4) {
+  //   //   margin-right: 30px;
+  //   // }
+  // }
+}

@@ -1,0 +1,108 @@
+//Note: import this form.scss file in component's scss or js file like to access this styles
+
+// checkbox :
+@mixin checkbox($width, $height, $border-radius, $background-color) {
+  height: $height;
+  width: $width;
+  border: 1px solid #b2b2b5;
+  border-radius: $border-radius;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  padding: 9px;
+  display: inline-block;
+  position: relative;
+  &:checked {
+    border-radius: $border-radius;
+    background-color: $background-color;
+  }
+  &:checked:after {
+    content: 'L';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: #ffffff;
+    /* rotate the mirrored L to make it a checkbox */
+    -ms-transform: scaleX(-1) rotate(-35deg); /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(-35deg); /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(-35deg);
+  }
+}
+
+.circle-checkbox {
+  @include checkbox(20px, 20px, 50%, #13b43e);
+}
+
+.square-ckeckbox {
+  @include checkbox(20px, 20px, 3px, #161038);
+}
+
+//form-input
+@mixin form-input($width, $height) {
+  box-sizing: border-box;
+  width: $width;
+  height: $height;
+  border: 1px solid #b2b2b5;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #595959;
+  font-family: Roboto;
+  font-size: 14px;
+  padding-left: 10px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+//file-input
+@mixin file-input($width, $height) {
+  width: $width;
+  height: $height;
+  font-size: 12px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+//file-input-label
+@mixin file-input-label {
+  color: #161038;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.15px;
+  line-height: 16px;
+}
+@mixin form-file-input(
+  $file-input-container-width,
+  $file-input-container-height,
+  $file-input-width,
+  $file-input-btn-width
+) {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: $file-input-container-width;
+  height: $file-input-container-height;
+  justify-content: space-between;
+  align-items: center;
+  input[type='file'] {
+    @include file-input($file-input-width, $file-input-container-height);
+    position: absolute;
+  }
+  .file-input {
+    @include file-input($file-input-width, $file-input-container-height);
+    border: 1px solid #b2b2b5;
+    border-radius: 3px;
+    background-color: #ededed;
+    opacity: 1;
+    margin-bottom: 0px;
+    margin-right: 32px;
+  }
+  .btn {
+    $btn-height: $file-input-container-height - 2;
+    $btn-width: $file-input-btn-width;
+    @include btn($btn-height, $btn-width);
+    &.btn-secondary {
+      @include btn-secondary;
+      opacity: 1;
+    }
+  }
+}

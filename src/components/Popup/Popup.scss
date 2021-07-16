@@ -1,0 +1,16 @@
+@import '../../styles/main.scss';
+.popup {
+  // z-index: 13000 !important;
+  margin-top: 70px;
+  .max-size-popup {
+    max-width: 1094px;
+    .close-icon {
+      position: absolute;
+      right: 29px;
+      top: 32px;
+    }
+    .popup-card {
+      @include card-container;
+    }
+  }
+}

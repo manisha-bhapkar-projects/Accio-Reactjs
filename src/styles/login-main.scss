@@ -1,0 +1,132 @@
+@import './main.scss';
+
+@mixin login-textStyle {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 21px;
+
+  @include tablet {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+}
+
+@mixin main-background-image($image) {
+  width: 100%;
+  //height: 968px;
+  height: calc(100vh - 16px);
+  display: flex;
+
+  background-image: $image;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    //height: 768px;
+    height: calc(100vh - 16px);
+  }
+}
+
+@mixin main-login-container {
+  // min-height: 592px;
+  // width: 462px;
+  min-height: 540px;
+  width: 420px;
+  border-radius: 10px;
+  background: rgba(4, 3, 0, 0.8);
+  padding: 10px;
+  display: block;
+  margin: auto;
+
+  @include tablet {
+    // min-height: 470.6px;
+    // width: 369.6px;
+    min-height: 420.6px;
+    width: 340.6px;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .btn {
+    box-sizing: border-box;
+    height: 56px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    @include login-textStyle;
+    &.btn-primary {
+      background-color: #ffcc25;
+      border: 1px solid #979797;
+      color: #000000;
+    }
+    &.btn-secondary {
+      background: none;
+      font-weight: 900;
+      line-height: 24px;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      margin-top: 20px;
+    }
+
+    @include tablet {
+      height: 46px;
+      border: 0.8px solid #979797;
+      border-radius: 6.4px;
+      margin-bottom: 8px;
+    }
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    @include tablet {
+      height: 40px;
+      width: 126px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@mixin login-input-text {
+  height: 56px;
+  border-radius: 8px;
+  background-color: #ebebeb;
+  color: #595959;
+  font-family: Roboto;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28px;
+
+  @include tablet {
+    height: 46px;
+    border-radius: 6.4px;
+    font-family: Roboto;
+    font-size: 19px;
+    letter-spacing: 0;
+    line-height: 23px;
+  }
+}
+
+@mixin login-input-label {
+  color: #ffffff;
+  @include login-textStyle;
+  margin-bottom: 10px;
+}
+
+@mixin links {
+  color: #ffcc25;
+  @include login-textStyle;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+// $backgroundImg: url('../images/background/main-background.jpeg');

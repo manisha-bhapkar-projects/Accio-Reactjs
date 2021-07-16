@@ -1,0 +1,46 @@
+@import '../../../styles/main.scss';
+@import '../../../styles/table.scss';
+
+.setup-design-form {
+  // Card
+  .card-container {
+    @include card-container();
+    min-height: 568px;
+    #Wizard {
+      .stepwizard-step p {
+        padding: 0px !important;
+      }
+    }
+    .step-container {
+      max-width: 1040px;
+    }
+  }
+  // Buttons
+  .button-container {
+    @include btn-group();
+    padding-top: 30px;
+    .btn-cancel {
+      @include btn-cancel();
+      margin-left: 10px;
+    }
+    .btn-save-close {
+      @include btn-save-close();
+      margin-left: 10px;
+    }
+    .btn-skip-and-continue {
+      @include btn-skip-and-continue();
+      margin-left: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit();
+      margin-left: 10px;
+    }
+    .btn-submit {
+      @include btn-save-submit();
+      margin-left: 10px;
+      @include btn(40px, 108px);
+      @include btn-primary;
+      cursor: pointer;
+    }
+  }
+}

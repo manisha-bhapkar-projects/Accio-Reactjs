@@ -1,0 +1,46 @@
+// .tooltip-text {
+//   text-align: left;
+//   font-size: 14px;
+//   font-family: Roboto;
+// }
+
+.tooltip-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+}
+// .tooltip-inner {
+//   background-color: #545454;
+//   // max-width: 125px;
+//   padding: 10px;
+//   opacity: 1 !important;
+// }
+// .tooltip {
+//   opacity: 1 !important;
+// }
+
+// .tooltip.bs-tooltip-bottom .arrow:before {
+//   border-right-color: #00cc00 !important;
+// }
+
+.tooltip-inner {
+  background-color: #545454;
+  //left: 50px;
+}
+.tooltip.bs-tooltip-right .arrow:before {
+  border-right-color: #545454 !important;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+  border-left-color: #545454 !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+  border-bottom-color: #545454 !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+  border-top-color: #545454 !important;
+}

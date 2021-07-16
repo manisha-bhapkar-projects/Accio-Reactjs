@@ -1,0 +1,473 @@
+{
+  "caseDetails": {
+    "caseNo": "24",
+    "phase": "New & Unassigned",
+    "status": "On-Track",
+    "caseTypeId": "fc9f9a24-ab30-4f58-9e76-9a4f3f7acd04",
+    "caseTypeName": "New Fitout F&B",
+    "propertyId": "1d03bd31-e76d-4a4a-8d9b-33e08a3f4438",
+    "propertyName": "Spinner’s End",
+    "customerId": "1e4408de-314f-4619-9b8e-5056ab02c955",
+    "customerName": "Alshaya Group",
+    "brandId": "3ae494c1-613d-495d-8266-ae773edaeb88",
+    "brandName": "Mothercare",
+    "milestoneDates": [
+      {
+        "id": "f634292c-dfa8-49ba-9b51-bfa4dcda34b7",
+        "phaseName": "New & unassigned",
+        "phaseSequence": 1,
+        "budgetedCompletion": "",
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-",
+        "actualCompletion": "-",
+        "delayInDays": "-",
+        "delayDueTo": "-",
+        "comments": "-"
+      },
+      {
+        "id": "f634292c-dfa8-49ba-9b51-bfa4dcda78b7",
+        "phaseName": "Kick-off",
+        "phaseSequence": 2,
+        "budgetedCompletion": "",
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-",
+        "actualCompletion": "-",
+        "delayInDays": "-",
+        "delayDueTo": "-",
+        "comments": "-"
+      },
+      {
+        "actualCompletion": "-",
+        "budgetedCompletion": "",
+        "comments": "-",
+        "delayDueTo": "-",
+        "delayInDays": "-",
+        "id": "63672bcb-5b30-4a44-806b-f8084ebb3ab0",
+        "phaseName": "Setup workflow",
+        "phaseSequence": 3,
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-"
+      },
+      {
+        "actualCompletion": "-",
+        "budgetedCompletion": "",
+        "comments": "-",
+        "delayDueTo": "-",
+        "delayInDays": "-",
+        "id": "6184ff6f-6b38-4994-93b7-2e46ce285323",
+        "phaseName": "Landlord works",
+        "phaseSequence": 4,
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-"
+      },
+      {
+        "actualCompletion": "-",
+        "budgetedCompletion": "",
+        "comments": "-",
+        "delayDueTo": "-",
+        "delayInDays": "-",
+        "id": "e22960d4-e30b-4494-acfe-4ffb91a82da5",
+        "phaseName": "Design",
+        "phaseSequence": 5,
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-"
+      },
+      {
+        "actualCompletion": "-",
+        "budgetedCompletion": "",
+        "comments": "-",
+        "delayDueTo": "-",
+        "delayInDays": "-",
+        "id": "7cb4f780-097c-4b87-af90-c484ef8a50f9",
+        "phaseName": "Unit handover & fitout",
+        "phaseSequence": 6,
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-"
+      },
+      {
+        "actualCompletion": "-",
+        "budgetedCompletion": "2020-07-16",
+        "comments": "-",
+        "delayDueTo": "-",
+        "delayInDays": "-",
+        "id": "39fb3b9d-ae69-45af-829e-e66971638273",
+        "phaseName": "Unit opening",
+        "phaseSequence": 7,
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-"
+      },
+      {
+        "actualCompletion": "-",
+        "budgetedCompletion": "",
+        "comments": "-",
+        "delayDueTo": "-",
+        "delayInDays": "-",
+        "id": "c707391c-a1f2-405c-abe6-0076b1a33c54",
+        "phaseName": "Fitout closure",
+        "phaseSequence": 8,
+        "plannedCompletion": "-",
+        "rePlannedCompletion": "-"
+      }
+    ],
+    "leaseDetails": {
+      "caseCreationDate": "2020-07-14",
+      "leaseId": "TF0001346",
+      "lafApprovalDate": "2020-07-06",
+      "contractSignedDate": "2020-07-16",
+      "leaseFromDate": "2020-07-16",
+      "leaseToDate": "2020-07-31",
+      "leaseArea": 30000,
+      "fitoutPeriod": "150",
+      "amendmentdTypeId": "cdbcf231-05b5-4d9f-9ca8-006d91ee516b",
+      "amendmentTypeName": "OriginalLease"
+    },
+    "unitDetails": [
+      {
+        "unitId": "0f544ace-7756-4690-b1dc-cdc39b2e3d93",
+        "unitName": "f&b retail store",
+        "unitTypeId": "600d3bbc-63c7-4ec7-b062-fd24995a38ae",
+        "unitTypeName": "f&b retail store",
+        "unitSize": "1758"
+      },
+      {
+        "unitId": "1",
+        "unitName": "GF-101",
+        "unitTypeId": "11",
+        "unitTypeName": "Lineshop",
+        "unitSize": 10000
+      }
+    ]
+  },
+
+  "propertyList": [
+    {
+      "propertyId": "15e910c3-8f62-4282-8ccb-1b032e4ee352",
+      "propertyName": "Malfoy Manor"
+    },
+    {
+      "propertyId": "15e910c3-8f62-4282-8ccb-1b032e4e2223",
+      "propertyName": "Gringotts"
+    }
+  ],
+
+  "customerList": [
+    {
+      "customerId": "6f31c029-e896-4fae-ba6f-ef1c13a989ed",
+      "customerName": "Landmark"
+    },
+    {
+      "customerId": "67b34ba8-813e-46eb-aff7-2a8e8709291c",
+      "customerName": "Azadea Group"
+    },
+    {
+      "customerId": "1e4408de-314f-4619-9b8e-5056ab02c955",
+      "customerName": "Alshaya Group"
+    },
+    {
+      "customerId": "10ea11a3-1d25-4f98-a037-c31091244b11",
+      "customerName": "Al Tayer Group"
+    },
+    {
+      "customerId": "90ab61aa-5e1b-4e35-a198-e8c42a347cb6",
+      "customerName": "Al Hokair Group"
+    }
+  ],
+  "UOM": [
+    {
+      "id": "3321abc5-0077-4b64-9ec7-94867dcbc220",
+      "unit": "Square feet",
+      "abbreviation": "Sq Ft"
+    }
+  ],
+
+  "llcList": [
+    {
+      "llcId": "b415ce46-a62a-4c0e-bbb1-a994599aa668",
+      "contactPersonEmail": null,
+      "contactPersonPhone": null,
+      "registrationNo": null,
+      "llcName": "Honeydukes",
+      "addressLine1": null,
+      "addressLine2": null,
+      "addressLine3": null,
+      "contactPersonName": null
+    },
+    {
+      "llcId": "7783f1e8-6c60-40fa-a6db-8201ea0c45ce",
+      "contactPersonEmail": null,
+      "contactPersonPhone": null,
+      "registrationNo": null,
+      "llcName": "The Three Broomsticks",
+      "addressLine1": null,
+      "addressLine2": null,
+      "addressLine3": null,
+      "contactPersonName": null
+    },
+    {
+      "llcId": "cd58c14e-e85d-4ea4-8625-e34ebf99297b",
+      "contactPersonEmail": null,
+      "contactPersonPhone": null,
+      "registrationNo": null,
+      "llcName": "Flourish & Blotts",
+      "addressLine1": null,
+      "addressLine2": null,
+      "addressLine3": null,
+      "contactPersonName": null
+    },
+    {
+      "llcId": "51f752bd-8f4e-4d2a-8206-9f860ad18f05",
+      "contactPersonEmail": null,
+      "contactPersonPhone": null,
+      "registrationNo": null,
+      "llcName": "Knockturn Alley",
+      "addressLine1": null,
+      "addressLine2": null,
+      "addressLine3": null,
+      "contactPersonName": null
+    }
+  ],
+  "brandList": [
+    { "brandId": "1", "brandName": "Banana Republic" },
+    { "brandId": "2", "brandName": "Gap" },
+    { "brandId": "3", "brandName": "Starbucks" },
+    { "brandId": "4", "brandName": "Pantaloons" },
+    { "brandId": "5", "brandName": "Cafe Nero" }
+  ],
+  "departmentList": [
+    {
+      "departmentId": "f01f94bb-fd0f-4ab6-a956-d38dd2add2ba",
+      "userTypesId": "a4985d57-38f9-46b2-91ef-4770d1f3624f",
+      "departmentName": "Admin"
+    },
+    {
+      "departmentId": "110e3450-5d48-4aee-aeb9-dd5958e7096c",
+      "userTypesId": "280dfbaf-c0df-4463-a842-ceaed1935096",
+      "departmentName": "Contractor"
+    },
+    {
+      "departmentId": "583ecb68-6b58-4084-bcb8-4c7f89535e53",
+      "userTypesId": "a4985d57-38f9-46b2-91ef-4770d1f3624f",
+      "departmentName": "Finance"
+    },
+    {
+      "departmentId": "17f7f831-7dae-4f92-9429-52ce82b031d4",
+      "userTypesId": "a4985d57-38f9-46b2-91ef-4770d1f3624f",
+      "departmentName": "Leasing"
+    },
+    {
+      "departmentId": "b3ebc41c-047b-42c5-aedd-157b63d2f4b3",
+      "userTypesId": "a4985d57-38f9-46b2-91ef-4770d1f3624f",
+      "departmentName": "MEP"
+    },
+    {
+      "departmentId": "e4c67c0d-0267-490d-8138-fa78c5cb2d2f",
+      "userTypesId": "a4985d57-38f9-46b2-91ef-4770d1f3624f",
+      "departmentName": "Retail Design"
+    },
+    {
+      "departmentId": "21ec3e88-d3c8-44ee-8b8b-1d28f22ccf4a",
+      "userTypesId": "a4985d57-38f9-46b2-91ef-4770d1f3624f",
+      "departmentName": "Senior Management"
+    },
+    {
+      "departmentId": "1f21db12-8688-409f-88b0-b9bac5f277f8",
+      "userTypesId": "aaed83b5-1cab-4cb2-a1c1-0852b2a85b28",
+      "departmentName": "Tenant"
+    }
+  ],
+  "amendmentType": [
+    {
+      "amendmentTypeDataRefId": "at1",
+      "amendmentTypeId": "cdbcf231-05b5-4d9f-9ca8-006d91ee516b",
+      "amendmentTypeName": "OriginalLease"
+    },
+    {
+      "amendmentTypeDataRefId": "at2",
+      "amendmentTypeId": "93727967-2a5e-462e-8dfb-79bcf12fcb94",
+      "amendmentTypeName": "Renewal"
+    },
+    {
+      "amendmentTypeDataRefId": "at3",
+      "amendmentTypeId": "1447511f-3a1f-4848-8c69-a15b66823b85",
+      "amendmentTypeName": "Expansion"
+    },
+    {
+      "amendmentTypeDataRefId": "at4",
+      "amendmentTypeId": "cb64575e-3a0f-4660-acd9-ac847a345454",
+      "amendmentTypeName": "Contraction"
+    },
+    {
+      "amendmentTypeDataRefId": "at5",
+      "amendmentTypeId": "39c2a3a5-dca0-40b9-acfe-0ba698533029",
+      "amendmentTypeName": "Termination"
+    },
+    {
+      "amendmentTypeDataRefId": "at6",
+      "amendmentTypeId": "cf1701db-ad12-4f30-8e17-8681b66fffb9",
+      "amendmentTypeName": "Holdover"
+    },
+    {
+      "amendmentTypeDataRefId": "at7",
+      "amendmentTypeId": "73b7b9ab-6a1a-460c-83e4-a25a48204cb0",
+      "amendmentTypeName": "Modification"
+    },
+    {
+      "amendmentTypeDataRefId": "at8",
+      "amendmentTypeId": "cd075cbe-00f6-4a04-b3e1-de935b287aaa",
+      "amendmentTypeName": "ReMeasurement"
+    },
+    {
+      "amendmentTypeDataRefId": "at9",
+      "amendmentTypeId": "74b35d71-57d3-462a-be70-2b60301d96b5",
+      "amendmentTypeName": "MonthToMonth"
+    },
+    {
+      "amendmentTypeDataRefId": "at10",
+      "amendmentTypeId": "270b7cb1-087e-4d44-8514-64834ced0721",
+      "amendmentTypeName": "Assignment"
+    },
+    {
+      "amendmentTypeDataRefId": "at11",
+      "amendmentTypeId": "8eda6dd2-5c3f-4183-a47e-ec94849881c7",
+      "amendmentTypeName": "Sublease"
+    },
+    {
+      "amendmentTypeDataRefId": "at12",
+      "amendmentTypeId": "60433e32-c229-4747-9eb9-07448048d69c",
+      "amendmentTypeName": "others"
+    }
+  ],
+  "unitIdList": [
+    {
+      "unitId": "2",
+      "unitName": "GF-102",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 20000
+    },
+    {
+      "unitId": "1",
+      "unitName": "GF-101",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 10000
+    },
+    {
+      "unitId": "3",
+      "unitName": "GF-103",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 10000
+    },
+    {
+      "unitId": "4",
+      "unitName": "FF-101",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 5000
+    },
+    {
+      "unitId": "5",
+      "unitName": "FF-102",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 15000
+    },
+    {
+      "unitId": "6",
+      "unitName": "FF-103",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 13000
+    },
+    {
+      "unitId": "7",
+      "unitName": "SF-103",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 11800
+    },
+    {
+      "unitId": "8",
+      "unitName": "SF-102",
+      "unitTypeId": "11",
+      "unitTypeName": "Lineshop",
+      "unitSize": 14000
+    }
+  ],
+
+  "propertyPhaseList": [
+    {
+      "propertyPhaseId": "2a7acfcf-1408-4adc-a123-42f5786de454",
+      "phaseId": "cbadedf6-513e-4885-bf57-d01d281ac0c0",
+      "phaseTypeId": "69edb111-4337-44d4-b990-9477e64d6e15",
+      "propertyPhaseName": "New & Unassigned",
+      "propertyPhaseSequence": 1,
+      "phaseName": "New & unassigned",
+      "phaseTypeName": "others"
+    },
+    {
+      "propertyPhaseId": "a04204b2-6417-489a-a4f2-1ff3069fce1f",
+      "phaseId": "06eec1be-11f2-49c9-a33d-b1aff67c4243",
+      "phaseTypeId": "69edb111-4337-44d4-b990-9477e64d6e15",
+      "propertyPhaseName": "Kick-off",
+      "propertyPhaseSequence": 2,
+      "phaseName": "Kick-off",
+      "phaseTypeName": "others"
+    },
+    {
+      "propertyPhaseId": "cd0bd3e6-b37b-40a5-aca7-c02272e7c49b",
+      "phaseId": "747ce796-ccc2-42a7-89e0-81a726386e7a",
+      "phaseTypeId": "69edb111-4337-44d4-b990-9477e64d6e15",
+      "propertyPhaseName": "Setup workflow",
+      "propertyPhaseSequence": 3,
+      "phaseName": "Setup workflow",
+      "phaseTypeName": "others"
+    },
+    {
+      "propertyPhaseId": "fa54bd36-aaba-4486-9f4f-94cf6f454b24",
+      "phaseId": "fabd86df-ce35-43a5-b307-1a06746b68f0",
+      "phaseTypeId": "40ab2573-b6a7-4ab4-972a-c421de2d3708",
+      "propertyPhaseName": "Landlord works",
+      "propertyPhaseSequence": 4,
+      "phaseName": "Landlord works",
+      "phaseTypeName": "inspection"
+    },
+    {
+      "propertyPhaseId": "e60906f7-12e3-4d28-823f-97ec284d67d5",
+      "phaseId": "cdc11e5a-a8e8-4fa6-ae2d-5dc6ac0d2e04",
+      "phaseTypeId": "20d16adc-ff03-4366-9696-1f6f434316f3",
+      "propertyPhaseName": "Design",
+      "propertyPhaseSequence": 5,
+      "phaseName": "Design",
+      "phaseTypeName": "design"
+    },
+    {
+      "propertyPhaseId": "31a4eadf-74b2-4a21-9dcb-aff456e13bb0",
+      "phaseId": "3cee5642-8efd-415a-8e46-b2704490b059",
+      "phaseTypeId": "40ab2573-b6a7-4ab4-972a-c421de2d3708",
+      "propertyPhaseName": "Unit handover & fitout",
+      "propertyPhaseSequence": 6,
+      "phaseName": "Unit handover & fitout",
+      "phaseTypeName": "inspection"
+    },
+    {
+      "propertyPhaseId": "864f37ba-bec7-427d-9ed9-d4eda43a448e",
+      "phaseId": "2394d69b-96c5-48ea-9d91-e9f9bac7499d",
+      "phaseTypeId": "40ab2573-b6a7-4ab4-972a-c421de2d3708",
+      "propertyPhaseName": "Unit Opening",
+      "propertyPhaseSequence": 7,
+      "phaseName": "Unit opening",
+      "phaseTypeName": "inspection"
+    },
+    {
+      "propertyPhaseId": "8d27ba78-ecb4-44f3-8b48-3d0c5dc18878",
+      "phaseId": "b0ce2433-ed38-429d-9412-b948656f93aa",
+      "phaseTypeId": "40ab2573-b6a7-4ab4-972a-c421de2d3708",
+      "propertyPhaseName": "Fitout closure",
+      "propertyPhaseSequence": 8,
+      "phaseName": "Fitout closure",
+      "phaseTypeName": "inspection"
+    }
+  ]
+}

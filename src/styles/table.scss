@@ -1,0 +1,96 @@
+.column-less4 {
+  max-width: 1100px;
+}
+@mixin table-container {
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+@mixin table-header-row {
+  margin: 0px;
+  display: flex;
+  border-top: 2px solid #d2d2d4;
+  border-bottom: 2px solid #d2d2d4;
+  height: 65px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+@mixin table-header-row-main {
+  display: flex;
+  flex: 12;
+  align-items: center;
+}
+
+@mixin table-header-icons {
+  flex: 1;
+}
+
+@mixin table-header-item {
+  padding: 0 10px 0px 0px;
+
+  &.right {
+    text-align: right;
+  }
+  &.center {
+    text-align: center;
+  }
+}
+
+@mixin table-content-row {
+  display: flex;
+  margin: 0px;
+  min-height: 62px;
+  color: #595959;
+  align-items: center;
+  border-bottom: 1px solid #d2d2d4;
+  &:hover {
+    background-color: #f5f6fa;
+  }
+}
+
+@mixin table-content-row-main {
+  display: flex;
+  flex: 11;
+  align-items: center;
+}
+
+@mixin table-content-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin table-content-item {
+  padding: 0 10px 0 0px;
+  &.right {
+    text-align: right;
+  }
+  &.center {
+    text-align: center;
+  }
+}
+
+@mixin width-and-margin-of-table-column {
+  // min-width: 200px;
+  width: 200px;
+  margin-right: 40px;
+  max-width: 200px;
+  // margin: 0 40px 0 0px;
+  @include largeDevice {
+    width: calc(200px + 2vw);
+    //  margin-right: 40px;
+    max-width: calc(200px + 2vw);
+  }
+}
+
+@mixin max-width-of-first-column {
+  // max-width: 218px;
+  max-width: 258px;
+  margin-right: 0px;
+}

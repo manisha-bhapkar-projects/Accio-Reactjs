@@ -1,0 +1,20 @@
+.label-with-icon {
+  display: flex;
+  align-items: center;
+  &:focus {
+    outline: none;
+  }
+  .label-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .label-text {
+    color: #00467f;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-align: right;
+  }
+}

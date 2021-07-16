@@ -1,0 +1,106 @@
+@import '../../../styles/main.scss';
+
+.assign-property-and-access {
+  .card {
+    @include card-container;
+  }
+
+  .table-title {
+    margin-bottom: 20px;
+  }
+  .no-table-data {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #8a8984;
+    margin-top: 15px;
+  }
+  .edit-button {
+    @include clickable-icon-btn;
+    padding: 0px;
+  }
+  .delete-button {
+    @include clickable-icon-btn;
+    padding-right: 0px;
+  }
+  .add-access-title {
+    margin-bottom: 30px;
+  }
+  .assigned-access-table {
+    .rdt_TableBody {
+      margin-right: -10px;
+    }
+  }
+
+  .add-access-row {
+    display: flex;
+    margin-bottom: 15px;
+
+    .add-access-row-fields {
+      width: 160px;
+      @include largeDevice {
+        width: calc(244px + 2vw);
+      }
+      margin-right: 20px;
+    }
+    .checkbox-section {
+      display: flex;
+      flex-direction: column;
+      .display-checkbox-section {
+        display: flex;
+        .access-check {
+          padding-top: 3.3px;
+          margin-right: 15px;
+          display: flex;
+          white-space: nowrap;
+          .access-checkboxes {
+            align-items: center;
+            margin-right: 8px;
+            .checkbox-input {
+              margin: 10px 0px;
+            }
+          }
+        }
+      }
+      .check-error {
+        margin-top: 2px;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #fc5e34;
+      }
+    }
+  }
+  .add-more-access-rows {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+
+  // .in-table-fields {
+  //   width: 90%;
+  // }
+  // .in-table-access-check {
+  //   padding-top: 3.5px;
+  //   margin-right: 20px;
+  //   display: flex;
+  //   .access-checkboxes {
+  //     align-items: center;
+  //     margin-right: 8px;
+  //   }
+  // }
+  .save-btn {
+    @include btn(30px, 68px);
+    @include btn-primary;
+    @include btn-small;
+  }
+}

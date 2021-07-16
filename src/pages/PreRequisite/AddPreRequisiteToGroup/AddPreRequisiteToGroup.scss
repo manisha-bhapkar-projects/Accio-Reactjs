@@ -1,0 +1,60 @@
+@import '../../../styles/main.scss';
+@import '../../../styles/table.scss';
+
+.add-prerequisite-to-group {
+  min-width: 1030px;
+  .search-box {
+    margin: 30px 0;
+  }
+
+  .delete-button {
+    @include clickable-icon-btn;
+  }
+  .added-prerequisite-table {
+    .rdt_TableBody {
+      margin-right: -10px;
+    }
+  }
+
+  .add-from-prerequisite-table {
+    .rdt_TableBody:first-child {
+      margin-right: -10px;
+    }
+  }
+
+  .select-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 18px 0 50px 0;
+    .btn-select {
+      &.btn {
+        @include btn(40px, 76px);
+      }
+      &.btn-secondary {
+        @include btn-secondary;
+      }
+    }
+  }
+  .submit-buttom-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    .btn-cancel {
+      margin-right: 10px;
+      &.btn {
+        @include btn(40px, 80px);
+      }
+      &.btn-secondary {
+        @include btn-secondary;
+      }
+    }
+    .btn-submit {
+      &.btn {
+        @include btn(40px, 108px);
+      }
+      &.btn-primary {
+        @include btn-primary;
+      }
+    }
+  }
+}

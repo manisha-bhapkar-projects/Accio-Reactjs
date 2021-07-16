@@ -1,0 +1,56 @@
+// .rdt_TableHeadRow {
+//   text-align: center;
+// }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#step2 {
+  .rdt_Table .rdt_TableHeadRow .rdt_TableCol:nth-child(3) {
+    // min-width: 30% !important;
+    // max-width: 30% !important;
+    // padding-left: 70px;
+    // padding-right: 70px;
+    #column-undefined {
+      margin-left: 10% !important;
+    }
+  }
+  .text-field-component-days {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  // .rdt_Table .rdt_TableBody .rdt_TableRow {
+  //   background-color: #f7f7f7;
+  //   margin-top: 10px;
+  //   border: 2px solid #f7f7f7;
+  // }
+  // .rdt_Table .rdt_TableHeadRow .rdt_TableCol:nth-child(3) {
+  //   #column-undefined {
+  //     margin-left: 20px !important;
+  //   }
+  // }
+  // .rdt_Table .rdt_TableHeadRow .rdt_TableCol:nth-child(4) {
+  //   #column-undefined {
+  //     margin-left: 20px !important;
+  //   }
+  // }
+  // .rdt_Table .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(2) {
+  //   // min-width: 30% !important;
+  //   // max-width: 30% !important;
+
+  //   // .text-field-component {
+  //   //   margin-left: 23% !important;
+  //   //   // margin-right: auto !important;
+  //   // }
+  // }
+  // .rdt_Table .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3) {
+  //   .switch-container {
+  //     margin-left: 15px;
+  //   }
+  // }
+  // .rdt_Table .rdt_TableBody .rdt_TableRow .rdt_TableCell:last-child {
+  //   margin-left: 50px !important;
+  // }
+}

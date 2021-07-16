@@ -1,0 +1,51 @@
+@import '../../../styles/main.scss';
+@import '../../../styles/table.scss';
+.setup-workflow {
+  .card {
+    @include card-container();
+    padding-left: 0;
+    padding-right: 0px !important;
+    border: 0px;
+    min-height: 400px;
+    .card-header-div {
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+    .wizard-text-box {
+      padding-left: 15px;
+    }
+  }
+
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+  button {
+    cursor: pointer;
+  }
+  button:focus {
+    outline: none;
+  }
+  .add-or-update-phases-button-container {
+    @include btn-group();
+    padding-top: 30px;
+    .btn-cancel {
+      @include btn-cancel();
+      margin-left: 10px;
+    }
+    .btn-save-close {
+      @include btn-save-close();
+      margin-left: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit();
+      margin-left: 10px;
+    }
+  }
+  // margin-top: 700px;
+  label[for='switch'] {
+    margin-left: 30px !important;
+  }
+  .language-label:focus {
+    outline: none;
+  }
+}

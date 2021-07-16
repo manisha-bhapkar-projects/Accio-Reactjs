@@ -1,0 +1,36 @@
+.searchbar-component {
+  margin-right: -11px;
+  &::after {
+    position: relative;
+    top: 1px;
+    right: 25px;
+    content: url('../../images/search/SearchSmall/Shape.png');
+    opacity: none;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+    opacity: 0.5;
+  }
+  &:focus::placeholder {
+    color: rgba(0, 0, 0, 0.87) !important;
+    opacity: 0.8;
+  }
+  .search-bar {
+    height: 42px;
+    width: 98.5%;
+    border: 1px solid #b2b2b5;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 10px;
+    padding-right: 32px;
+    color: #89888c;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import '../../../styles/main.scss';
+
+#workFlowListing {
+  padding: 30px !important;
+  .card-header-div {
+    margin-left: 0px;
+  }
+  .total {
+    padding-bottom: 10px;
+    span {
+      font-weight: bolder;
+      font-size: 15px;
+    }
+  }
+  .margin-top-50 {
+    margin-top: 50px;
+  }
+}

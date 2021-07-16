@@ -1,0 +1,107 @@
+@import '../../styles/main.scss';
+
+.dropdown-multi-select {
+  @mixin menuList {
+    padding: 0px;
+    overflow-y: auto !important;
+    max-height: 200px;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }
+  a:focus {
+    outline: none !important;
+  }
+  .input-label {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.98px;
+    color: #595959;
+    text-transform: uppercase;
+    &.filter {
+      font-size: 11px;
+      letter-spacing: 0.9px;
+      color: #595959;
+    }
+    &.lable-error {
+      color: #fc5e34;
+    }
+  }
+
+  .helper-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #fc5e34;
+  }
+
+  .multi-select-dropdown {
+    .multi-select__control {
+      border-radius: 3px;
+      border: solid 1px #b2b2b5;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #89888c;
+      height: 42px;
+      width: 100%;
+      box-shadow: none;
+      &.error {
+        border-color: #fc5e34;
+      }
+      &:hover {
+        border-color: #b2b2b5 !important;
+      }
+    }
+    .multi-select__menu {
+      // width: 100%;
+      margin: 0px;
+      padding: 0px;
+      box-shadow: none;
+    }
+    .multi-select__menu-list {
+      @include menuList();
+    }
+
+    // multi-select-with-error
+    .multi-select-with-error__control {
+      border-radius: 3px;
+      border: solid 1px #fc5e34;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #89888c;
+      height: 42px;
+      width: 100%;
+      box-shadow: none;
+    }
+    .multi-select-with-error__menu {
+      margin: 0px;
+      padding: 0px;
+      box-shadow: none;
+    }
+    .multi-select-with-error__menu-list {
+      padding: 0px;
+      @include menuList();
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import '../../../styles/main.scss';
+@import '../../../styles/table.scss';
+
+.add-update-prerequisite-group {
+  .card {
+    @include card-container;
+    margin-bottom: 30px;
+  }
+  .group-name-fields {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    .group-name {
+      width: 332px;
+      @include largeDevice {
+        width: calc(332px + 2vw);
+      }
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+  .add-prerequisite-label-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .added-prerequisite-table {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    .rdt_TableBody {
+      margin-right: -10px;
+    }
+
+    // @include table-container;
+
+    // .prerequisite-content-row {
+    //   @include table-content-row;
+    //   .content-row-items {
+    //     @include table-content-row-main;
+    //     .content-row-item {
+    //       @include table-content-item;
+    //     }
+    //   }
+    //   .content-row-icon {
+    //     @include table-content-icons;
+    //     padding-right: 20px;
+    //   }
+    // }
+  }
+
+  .delete-button {
+    @include clickable-icon-btn;
+  }
+  .add-update-prerequisite-group-buttons {
+    @include btn-group;
+    margin-top: 30px;
+    .btn-cancel {
+      @include btn-cancel;
+      margin-right: 10px;
+    }
+    .btn-save-close {
+      @include btn-save-close;
+      margin-right: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit;
+    }
+  }
+}

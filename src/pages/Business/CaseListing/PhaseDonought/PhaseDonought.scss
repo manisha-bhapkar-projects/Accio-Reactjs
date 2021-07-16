@@ -1,0 +1,85 @@
+@import '../../../../styles/main.scss';
+
+.phase-donought-chart {
+  .phase-card {
+    // width: 323px;
+
+    height: 131px;
+    border-radius: 3px;
+    border: solid 1px rgba(89, 89, 89, 0.3);
+    background-color: var(--white);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @include tablet {
+      //width: 234px;
+      padding: 10px;
+    }
+    @include largeDevice {
+      // width: 442px;
+    }
+    .phase-card-title {
+      opacity: 0.9;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.14px;
+      text-align: center;
+      color: #595959;
+      margin-bottom: 11px;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 15px;
+        letter-spacing: 1.07px;
+      }
+    }
+    .donought-with-total {
+      display: flex;
+      align-items: center;
+      margin-left: 70px;
+      &.on-hold {
+        margin-left: 0px;
+      }
+      @include tablet {
+        margin-left: 0px;
+      }
+      .donought-chart-box {
+        height: 72px;
+        width: 72px;
+      }
+      .donought-total {
+        position: absolute;
+        width: 72px;
+        display: flex;
+        justify-content: center;
+        color: #6d7278;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 28px;
+        //margin-left: 2.5px;
+      }
+      .legends {
+        margin-left: 40px;
+        .legend-text {
+          opacity: 0.9;
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+          color: #2e2f31;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

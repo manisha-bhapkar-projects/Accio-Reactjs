@@ -1,0 +1,57 @@
+@import '../../../../styles/main.scss';
+@import '../../../../styles/table.scss';
+
+#step-4-design-form {
+  .section-wise-form-data-table {
+    padding-top: 55px;
+    .table-title {
+      height: 70px;
+      border: solid 1px rgba(198, 199, 201, 0.4);
+      background-color: rgba(198, 199, 201, 0.15);
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: var(--black);
+    }
+    .section-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 61px;
+      font-family: $font-family;
+      border-bottom: solid 1px rgba(198, 199, 201, 0.4);
+      justify-content: space-between;
+      .section-header-title {
+        height: 16px;
+        color: #c19d29;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 22px;
+        text-transform: uppercase;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .section-header-add-more {
+        padding-right: 31px;
+      }
+    }
+  }
+  .file-type-dropdown {
+    min-width: 244px;
+  }
+  .add-more-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

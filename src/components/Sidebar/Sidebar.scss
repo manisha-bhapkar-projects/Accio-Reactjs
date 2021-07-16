@@ -1,0 +1,453 @@
+@import '../../styles/main.scss';
+
+$phaseExpanded: url('../../images/arrow/blue/up-arrow.png');
+$phaseCollapsed: url('../../images/arrow/black/arrow-down.png');
+$phaseCompleted: url('../../images/right\ tick/completed/group-10.png');
+
+@mixin status-box {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 6px;
+  background-color: #898888;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 198px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@mixin phase-text {
+  display: inherit;
+  // width: 62%;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.5px;
+  color: #000000;
+  text-transform: uppercase;
+  // margin-left: 20px;
+  padding: 0px 59px 0px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  white-space: pre-line;
+}
+
+@mixin subphase-text {
+  display: inherit;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #595959;
+  white-space: pre-line;
+}
+
+@mixin phase-text-wrapper {
+  width: 210px;
+  height: 80px;
+  background-color: #cbcbcb;
+}
+
+@mixin subphase-text-wrapper {
+  width: 210px;
+  height: 96px;
+  background-color: #edeef1;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-layout.sidebar-expanded {
+  width: 211px;
+  top: 98px;
+  bottom: 0px;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .sidebar.sidebar-expanded {
+    background-color: #f5f6fa;
+    width: 100%;
+
+    .sidebar-end {
+      display: flex;
+      justify-content: flex-end;
+      height: 25px;
+      width: 210px;
+      background-color: #d8d8d8;
+
+      .arrow.sidebar-expanded {
+        width: 25px;
+        background-color: #898888;
+        .arrow-btn {
+          @include clickable-icon-btn;
+          width: 25px;
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+    }
+
+    .sidebar-section {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 0px 1px 0px;
+      cursor: pointer;
+      &:nth-child(8) {
+        margin-bottom: 0px;
+      }
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    .phase {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      &.has-subphase {
+        &::after {
+          content: $phaseCollapsed;
+          float: left;
+          position: absolute;
+          margin: 0px;
+          padding: 0px 0px 0px 171px;
+        }
+      }
+      .status-box {
+        @include status-box;
+        &::after {
+          transform: rotate(-45deg);
+          content: '';
+        }
+      }
+      .phase-text-wrapper {
+        @include phase-text-wrapper;
+        // margin-bottom: 5px;
+      }
+      .phase-text {
+        @include phase-text;
+      }
+
+      &.completed {
+        .status-box {
+          @include status-box;
+          background-color: #13b43e;
+          &::after {
+            content: $phaseCompleted;
+            margin-left: 1px;
+          }
+        }
+      }
+      //up arrow
+      &.up {
+        margin-bottom: 0px;
+        &.has-subphase {
+          &::after {
+            content: $phaseExpanded;
+            float: left;
+            position: absolute;
+            margin: 0px;
+            padding: 0px 0px 0px 171px;
+          }
+        }
+      }
+      //current
+      &.current {
+        margin-bottom: 0px;
+        // &.has-subphase {
+        //   &::after {
+        //     content: $phaseExpanded;
+        //     float: left;
+        //     position: absolute;
+        //     margin: 0px;
+        //     padding: 0px 0px 0px 171px;
+        //   }
+        // }
+        .phase-text {
+          font-weight: bold;
+          color: #00467f;
+        }
+        .status-box {
+          @include status-box;
+          background-color: #00467f;
+        }
+      }
+    }
+
+    .subphase {
+      height: 96px;
+      background-color: #f5f6fa;
+      display: flex;
+      align-items: center;
+      .status-flow {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 25%;
+        .line {
+          display: inherit;
+          width: 1px;
+          height: 88px;
+          background: rgba($color: #d9dce6, $alpha: 0.7);
+          align-items: center;
+          justify-content: center;
+          .subphase-state {
+            display: inherit;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            height: 28px;
+            width: 29px;
+            border-radius: 50%;
+            border: solid 1px #b9b7c3;
+            background-color: #ffffff;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: #b9b7c3;
+            &.current {
+              border: solid 1px #00467f;
+              color: #00467f;
+              .dot {
+                background-color: #003d6f;
+              }
+            }
+            &.completed {
+              border: solid 1px #78ca3c;
+              color: #78ca3c;
+            }
+          }
+        }
+        .dot {
+          width: 8px;
+          height: 8px;
+          background-color: #b9b7c3;
+          border-radius: 50%;
+          opacity: 0.7;
+        }
+        .last-subphase-line {
+          width: 1px;
+          height: 8px;
+          border-radius: 0;
+          background: rgba($color: #d9dce6, $alpha: 0.7);
+        }
+      }
+
+      .subphase-text-wrapper {
+        @include subphase-text-wrapper;
+      }
+      .subphase-text {
+        width: 66%;
+        @include subphase-text;
+        &.current {
+          font-weight: bold;
+          color: #00467f;
+        }
+      }
+    }
+  }
+}
+
+.sidebar-layout.sidebar-collapsed {
+  display: block;
+  width: 60px;
+  top: 98px;
+  bottom: 50px;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .sidebar.sidebar-collapsed {
+    background-color: #f5f6fa;
+    width: 45px;
+    float: left;
+    .sidebar-section {
+      cursor: pointer;
+      margin: 0px 0px 1px 0px;
+      &:nth-child(8) {
+        margin-bottom: 0px;
+      }
+    }
+    .sidebar-end {
+      display: flex;
+      height: 25px;
+      background-color: #898888;
+      justify-content: center;
+      .arrow.sidebar-collapsed {
+        width: 25px;
+        .arrow-btn {
+          @include clickable-icon-btn;
+          width: 25px;
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+    }
+
+    .phase {
+      height: 80px;
+      background-color: #f5f6fa;
+
+      display: flex;
+      align-items: center;
+      &.has-subphase {
+        &::after {
+          content: $phaseCollapsed;
+          float: left;
+          position: absolute;
+          margin: 0px;
+          padding: 0px 0px 0px 10px;
+        }
+      }
+      .status-box {
+        @include status-box;
+        left: 32px;
+        &::after {
+          transform: rotate(-45deg);
+          content: '';
+        }
+      }
+      .phase-text-wrapper {
+        @include phase-text-wrapper;
+        width: 45px;
+      }
+      .phase-text {
+        display: none;
+      }
+      &.completed {
+        .status-box {
+          @include status-box;
+          left: 32px;
+          background-color: #13b43e;
+          &::after {
+            content: $phaseCompleted;
+            margin-top: 2px;
+          }
+        }
+      }
+      &.up {
+        margin-bottom: 0px;
+        &.has-subphase {
+          &::after {
+            content: $phaseExpanded;
+            float: left;
+            position: absolute;
+            margin: 0px;
+            padding: 0px 0px 0px 10px;
+          }
+        }
+      }
+      &.current {
+        margin-bottom: 0px;
+        // &.has-subphase {
+        //   &::after {
+        //     content: $phaseExpanded;
+        //     float: left;
+        //     position: absolute;
+        //     margin: 0px;
+        //     padding: 0px 0px 0px 10px;
+        //   }
+        // }
+        .phase-text {
+          font-weight: bold;
+          color: #00467f;
+        }
+        .status-box {
+          @include status-box;
+          left: 32px;
+          background-color: #00467f;
+        }
+      }
+    }
+
+    .subphase {
+      height: 96px;
+      display: flex;
+      align-items: center;
+      .status-flow {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        .line {
+          display: inherit;
+          width: 1px;
+          height: 88px;
+          background: rgba($color: #d9dce6, $alpha: 0.7);
+          align-items: center;
+          justify-content: center;
+          .subphase-state {
+            display: inherit;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            height: 28px;
+            width: 29px;
+            border-radius: 50%;
+            border: solid 1px #b9b7c3;
+            background-color: #ffffff;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: #b9b7c3;
+            &.current {
+              border: solid 1px #00467f;
+              color: #00467f;
+              .dot {
+                background-color: #003d6f;
+              }
+            }
+            &.completed {
+              border: solid 1px #78ca3c;
+              color: #78ca3c;
+            }
+          }
+        }
+        .dot {
+          width: 8px;
+          height: 8px;
+          background-color: #d9dce6;
+          border-radius: 50%;
+          opacity: 0.7;
+        }
+        .last-subphase-line {
+          width: 1px;
+          height: 8px;
+          border-radius: 0;
+          background: rgba($color: #d9dce6, $alpha: 0.7);
+        }
+      }
+      .subphase-text-wrapper {
+        @include subphase-text-wrapper;
+      }
+      .subphase-text {
+        display: none;
+      }
+    }
+  }
+}
+
+.tootip-text {
+  max-width: 64ch;
+}

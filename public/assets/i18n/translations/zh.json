@@ -1,0 +1,291 @@
+{
+  "GLOBAL": {
+    "ACTION_DELETE": "Delete",
+    "ACTION_EDIT": "Edit",
+    "ACTION_CREATE_COPY": "Create a copy",
+    "BUTTON_SAVE_AND_CLOSE": "Save and Close",
+    "BUTTON_SAVE_AND_CONTINUE": "Save and Continue",
+    "BUTTON_SKIP_AND_CONTINUE": "Skip and Continue",
+    "BUTTON_SAVE_AND_SUMIT": "Save and Submit",
+    "BUTTON_CANCEL": "Cancel",
+    "BUTTON_SUBMIT": "Submit",
+    "BUTTON_EDIT": "Edit",
+    "THIS_FIELD_IS_MANDATORY": "This field is mandatory",
+    "SUCCESS": "SUCCESS",
+    "INFORMATION": "INFORMATION",
+    "ERROR": "ERROR",
+    "YES": "Yes",
+    "NO": "No",
+    "OK": "OK",
+    "TRY_AGAIN": "Try again",
+    "ADVANCED": "Advanced",
+    "FILTER": "Filter",
+    "CLEAR": "Clear",
+    "APPLY": "Apply",
+    "SELECT": "Select",
+    "ADD_MORE_ROWS": "Add more rows",
+    "BUTTON_SELECT": "Select",
+    "ERROR_MSG": {
+      "MANDATORY_FIELD": "Please enter a value",
+      "MANDATORY_DROPDOWN_SELECT": "Please select a option",
+      "MANDATORY_DATE_FIELD": "Please select a date",
+      "AUTO_POPULATE_FIELDS": "Do you want to copy the values from English into the other languages?",
+      "ERR_TEXTFIELD_INPUT": "Incorrect text format",
+      "ERR_EMAIL_INPUT": "Please enter the email address in format: name@mail.com",
+      "SOMETHING_WENT_WRONG": "Something went wrong, we were unable to process your request, please refresh and try again. If the problem persists please contact our support team at accio-support@thinkhance.com",
+      "ERR_EXCEEDED_MAX_LENGTH": "Max length exceeded",
+      "ERR_CHANGES_LOST": "Modified changes will be lost. Are you sure you want to cancel?"
+    }
+  },
+  "ADMIN": {
+    "WORKFLOW": {
+      "PREVIEW": "Preview",
+      "PRE-REQUISITES": "Pre-Requisites",
+      "UPLOAD": "Upload"
+    }
+  },
+
+  "CASE_LISTING": {
+    "COL_1_CASE_NO": "Case #",
+    "COL_2_PROPERTY": "Property",
+    "COL_3_TENANT": "Tenant",
+    "COL_4_UNITS": "Unit(s)",
+    "COL_5_TASK_DUE_DATE": "Task Due Date",
+    "COL_6_TASK_STATUS": "Task status",
+    "COL_7_ACTION": "Action",
+    "COL_8_PHASE": "Phase",
+    "COL_9_CASE_STATUS": "Case Status",
+    "COL_10_PENDING_WITH": "Pending With",
+    "ON_TRACK": "On-Track",
+    "DELAYED": "Delayed",
+    "ON_HOLD": "On-hold",
+    "CANCELLED": "Cancelled",
+    "CLOSED": "Closed",
+    "SEARCH_RESULT_FOR": "Search result for \"{{searchValue}}\"",
+    "NO_SEARCH_RESULT": "No Result Found for \"{{searchValue}}\". Try Advanced Search Instead",
+    "CASES": "Cases",
+    "TOTAL": "Total #",
+    "CREATE_A_NEW_CASE_LABEL": "Create a new case",
+    "CASE_TYPE": "Case Type",
+    "BRAND": "BRAND",
+    "ASSIGNED_TO_FILTER": "Assigned To",
+    "NO_CASES_AVAILABLE": "No cases available",
+    "VIEW": "View",
+    "RE-ASSIGN": "Re-assign",
+    "LICENSE_SUSPENDED": "License for all the property you have access are suspended .Please contact property admin."
+  },
+
+  "CASE_DETAILS": {
+    "CASE_CREATED_SUCCESSFULLY": "Case number - \"{{caseNo}}\" is successfully created  and \n assigned to \"{{tchName}}\" ",
+    "CANCEL_CASE": "Cancel Case",
+    "PUT_CASE_ON_HOLD": "Put Case on Hold",
+    "PROPERTY_DETAIL_TITLE": "Property Details",
+    "PROPERTY_NAME": "Property name",
+    "CASE_NO": "Case#",
+    "CASE_TYPE": "Case type",
+    "PHASE": "Phase",
+    "CUSTOMER": "Customer",
+    "BRAND": "Brand",
+    "STATUS": "Status",
+    "LEASE_DETAILS": {
+      "LEASE_DETAILS_TITLE": "Lease Details",
+      "CASE_CREATION_DATE": "Case Creation Date",
+      "LAF_APPROVAL_DATE": "LAF Approval Date",
+      "LEASE_ID": "Lease ID",
+      "AMENDMENT_TYPE": "Amendment type",
+      "LEASED_AREA": "Leased Area",
+      "CONTRACT_SIGNED_DATE": "Contract Signed Date",
+      "FITOUT_PERIOD_(DAYS)": "Fitout Period (days)",
+      "LEASE_FROM": "Lease From",
+      "LEASE_TO": "Lease To"
+    },
+    "MILESTONE_DETAILS": {
+      "MILESTONE_DETAILS_TITLE": "Milestone Details",
+      "COL_1_PHASE": "Phase",
+      "COL_2_BUDGETED_COMPLETION": "Budgeted Completion",
+      "COL_3_PLANNED_COMPLETION": "Planned Completion",
+      "COL_4_RE-PLANNED_COMPLETION": "Re-Planned Completion",
+      "COL_5_ACTUAL_COMPLETION": "Actual Completion",
+      "COL_6_DELAY_IN_DAYS": "Delay In Days",
+      "COL_7_DELAY_DUE_TO": "Delay Due To",
+      "COL_8_COMMENTS": "Comments"
+    },
+    "UNIT_DETAILS": {
+      "UNIT_DETAILS_TITLE": "Unit Details",
+      "COL_1_UNIT_ID": "Unit Id",
+      "COL_2_UNIT_TYPE": "Unit Type",
+      "COL_3_AREA": "Area",
+      "TOTAL_AREA": "Total Area"
+    },
+
+    "ERROR_MSG": {
+      "ERR_LEASE_FROM_DATE": "Lease from date should be greater than today's date",
+      "ERR_LEASE_TO_DATE": "Lease to date should be greater than lease from date",
+      "ERR_NO_UNITS_ADDED": "Please assign the unit details for the property",
+      "ERR_SAME_UNIT_DETAILS_ADDED_TWICE": "The unit you has seleted is already chosen. Please select a different unit",
+      "ALERT_NO_BUDGETED_COMPLETION_DATE": "You have not entered the budgeted completion details for any of the phases. \n Are you sure you want to continue?",
+      "ALERT_PROPERTY_CHANGE": "Changing property will reset/modify the milestone details and unit detials entered"
+    }
+  },
+
+  "KICK_OFF": {
+    "KICK_OFF_MEETING_AND_SIGN_OFF": {
+      "RECORD_ATTENDEES": "Record Attendees",
+      "REVIEW_AND_UPDATE_DATES": "Review & Update Dates",
+      "ADD_NOTES_AND_COMMENTS": "Add Notes & Comments",
+      "PREVIEW_MOM_AND_SIGN_OFF": "Preview Mom & Sign Off",
+      "STEP_1": {
+        "COL_1": "NAME",
+        "COL_2": "COMPANY",
+        "COL_3": "EMAIL",
+        "COL_4": "ROLE",
+        "COL_5": "ATTENDED?",
+        "ADD_MORE_ROWS": "Add More rows",
+        "ATTENDEES_NOT_FOUND": "ATTENDEES NOT FOUND"
+      },
+      "STEP_3": {
+        "NOTES_LABEL": "ADD NOTES & COMMENTS (OPTIONAL)",
+        "LENGTH_OF_NOTES": 500
+      },
+      "STEP_4": {
+        "SIGN": "Sign",
+        "PDF": {
+          "KICK_OFF_MEETING": "启动大会",
+          "DATE": "日期:",
+          "TIME": "时间:",
+          "PROPERTY": "属性:",
+          "CUSTOMER": "顾客:",
+          "BRAND": "牌:",
+          "UNIT": "单元:",
+          "FITOUT_PERIOD": "健身期:",
+          "CASE": "案件 #:",
+          "ATTENDEES": "参会者:",
+          "NAME": "名称",
+          "ROLE": "角色",
+          "ORGANISATION": "组织",
+          "ATTENDED": "参加?",
+          "NOTES_AND_COMMENTS": "注释和评论",
+          "SCHEDULE": "时间表已获同意:",
+          "PHASES": "相/子相",
+          "BUDGETED_DATE": "预算完成日期",
+          "PLANNED_DATE": "计划完成日期",
+          "COMMENTS": "注释",
+          "SIGNED": "被...签名",
+          "PAGE": "页",
+          "OF": "的",
+          "ON_BEHALF": "代表",
+          "OWNER": "所有者",
+          "TENANT": "承租人"
+        }
+      },
+      "KICK_OFF_SIGN_OFF": {
+        "ERROR_MSG": {
+          "SELECT_SIGNED_DOCUMENT": "Select signed document",
+          "SELECT_VALID_DOCUMENT": "Select valid signed document",
+          "ERROR_DOCUMENT_SIZE": "Maximum 10 MB file allowed"
+        }
+      }
+    },
+    "ASSIGN_TEAM": {
+      "COMPLETION_DATE": "KICK-OFF COMPLETION DATE",
+      "ASSIGN_BY_DATE": "ASSIGN BY DATE",
+      "COL_1": "ROLE",
+      "COL_2": "NAME",
+      "COL_3": "EMAIL",
+      "COL_4": "CONTACT",
+      "NO_TEAM_ASSIGNED": "No team assigned",
+      "ROLES_NOT_FOUND": "Roles not found",
+      "NAMES_NOT_FOUND": "Names not found",
+      "ADD_TEAM": "Add Team",
+      "ADD_TENANT_TEAM": "Add Tenant Team",
+      "ADD_MORE_ROWS": "Add More rows",
+      "ASSIGN_OWNER_TEAM_MEMBER": {
+        "TEAM_ASSIGNED": "Team Assigned"
+      },
+      "ASSIGN_TENANT_TEAM_MEMBER": {
+        "ADD_PRE_APPROVED_CONTRACTORS": "Add pre-approved contractors",
+        "ADD_NEW_CONTRACTORS": "Add new contractors",
+        "ADD_MORE_CONTRACTORS": "Add More rows",
+        "ADD_NEW_CONTRACTOR_TITLE": "ADD NEW CONTRACTOR",
+        "ADD_PRE_APPROVED_CONTRACTOR": {
+          "TITLE": "PRE-APPROVED LIST OF FITOUT CONTRACTORS AND MEP SUB-CONTRACTORS",
+          "CONTRACTOR": "CONTRACTOR",
+          "NAME": "NAME",
+          "CONTACT": "CONTACT",
+          "EMAIL": "EMAIL",
+          "SELECTED": "SELECTED",
+          "ADD_NEW_CONTRACTOR": "Add new contractor",
+          "ADD_PRE_APPROVED_CONTRACTOR": "Add pre-approved contractors",
+          "ERROR_MSG": {
+            "PRE_APPROVED_CONTRACTOR_LIST_NO_DATA": "No pre-approved contractors available ",
+            "PLEASE_SELECT_PRE_APPROVED_CONTRACTOR": "Please select pre-approved contractor"
+          }
+        },
+        "ADD_NEW_CONTRACTOR": {
+          "NOTE": "Kindly note that adding a new contractor is subject to approval and could cause delay \n in initiating the design phase.",
+          "CONTRACTOR_NAME": "CONTRACTOR NAME",
+          "CONTRACTOR_NAME_LENGTH": 100,
+          "CONTACT_PERSON": "CONTACT PERSON",
+          "CONTACT_PERSON_LENGTH": 100,
+          "EMAIL": "email",
+          "PHONE": "phone (office)",
+          "PHONE_LENGTH": 30,
+          "MOBILE": "phone (mobile)",
+          "MOBILE_LENGTH": 30,
+          "LICENCE": "trade license #",
+          "LICENCE_LENGTH": 45,
+          "LICENCE_NAME": "trade license name",
+          "LICENCE_NAME_LENGTH": 45,
+          "JUSTIFICATION": "justification",
+          "JUSTIFICATION_LENGTH": 200,
+          "TRADE_LICENCE": "Trade licence",
+          "OTHER_ATTACHMENT": "other attachments (this is optional)",
+          "ERROR_MSG": {
+            "CONTRACTOR_NAME_IS_REQUIRED": "Contractor name is required",
+            "CONTACT_PERSON_IS_REQUIRED": "Contact person is required",
+            "EMAIL_IS_REQUIRED": "Email is required",
+            "OFFICE_PHONE_IS_REQUIRED": "Office phone number is required",
+            "MOBILE_NUMBER_IS_REQUIRED": "Mobile number is required",
+            "TRADE_LICENSE_IS_REQUIRED": "Trade license is required",
+            "TRADE_LICENSE_NAME_IS_REQUIRED": "Trade license name is required",
+            "JUSTIFICATION_IS_REQUIRED": "Justification is required",
+            "INVALID_EMAIL": "Invalid email",
+            "INVALID_FILE": "Invalid file",
+            "LENGHT_EXCEEDED": "Length exceeded",
+            "SELECT_FILE": "Select file to upload"
+          }
+        }
+      },
+      "ERROR_MSG": {
+        "USERS_NOT_FOUND_FOR_SELECTED_ROLE": "Users not found for selected role please select another role",
+        "USER_EXIST_WITH_SAME_ROLE": "User with same role already exist,please select another user",
+        "USER_IS_REQUIRED": "User is required",
+        "REQUIRED_USER_WITH_ROLE": "Member with this role is required.If you delete this member then you need to add new user with same role"
+      }
+    },
+    "ADD_UPDATE_MILESTONES": {
+      "SELECT_WORKFLOW": "SELECT WORKFLOW",
+      "TABLE": {
+        "PHASE": "PHASE",
+        "BUDGETED_COMPLETION": "BUDGETED COMPLETION",
+        "PLANNED_COMPLETION": "PLANNED COMPLETION",
+        "ACTUAL_COMPLETION": "ACTUAL COMPLETION",
+        "COMMENTS_TENANT": "COMMENTS - TENANT",
+        "COMMENTS_OWNER": "COMMENTS - OWNER"
+      }
+    },
+    "SCHEDULE_KICK_OFF_MEETING": {
+      "ATTENDESS": "ATTENDESS",
+      "DATE": "DATE",
+      "START_TIME": "START TIME",
+      "END_TIME": "END TIME",
+      "LOCATION": "LOCATION",
+      "MESSAGE": "MESSAGE"
+    }
+  },
+  "COMPONENTS": {
+    "LANGUAGE_SWITCHER": {
+      "LABEL": "SWITCH TO"
+    }
+  }
+}

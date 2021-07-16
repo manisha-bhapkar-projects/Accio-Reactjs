@@ -1,0 +1,52 @@
+@import '../../../styles/main.scss';
+
+.assign-department-and-roles {
+  .table-title {
+    margin-bottom: 20px;
+  }
+  .no-table-data {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #8a8984;
+    margin-top: 15px;
+  }
+  .edit-button {
+    @include clickable-icon-btn;
+    padding: 0px;
+  }
+  .delete-button {
+    @include clickable-icon-btn;
+    padding-right: 0px;
+  }
+
+  .add-dept-title {
+    margin-bottom: 30px;
+  }
+  .assigned-dept-table {
+    .rdt_TableBody {
+      margin-right: -10px;
+    }
+  }
+  .add-dept-row {
+    display: flex;
+    margin-bottom: 15px;
+
+    .add-dept-row-fields {
+      width: 232px;
+      @include largeDevice {
+        width: calc(232px + 2vw);
+      }
+      margin-right: 20px;
+    }
+  }
+  .add-more-dept-rows {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+}

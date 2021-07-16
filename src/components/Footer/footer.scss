@@ -1,0 +1,35 @@
+footer {
+  position: fixed;
+  bottom: 0px;
+}
+
+@media only screen and (min-device-width: 1025px) {
+  footer {
+    float: left;
+    height: 50px;
+    width: 100%;
+    background-color: #dfe0e5;
+    .footer-content {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 14px;
+      letter-spacing: 0;
+      padding: 17px 0px 17px 30px;
+    }
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  footer {
+    float: left;
+    height: 50px;
+    width: 100%;
+    background-color: #dfe0e5;
+    .footer-content {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 14px;
+      letter-spacing: 0;
+      padding: 17px 0px 17px 30px;
+    }
+  }
+}

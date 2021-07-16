@@ -1,0 +1,157 @@
+$whiteDownArrow: url('../../images/dropdown/path-copy-2.png');
+$yellowUpArrow: url('../../images/dropdown/yellow\ arrow/path-copy-5.png');
+
+@mixin lang-dropdown {
+  background: none;
+  border: none;
+  //padding: 0px 10px;
+  min-width: 0px;
+  width: 201px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 21px;
+
+  &:hover {
+    box-shadow: none;
+    .menu {
+      border-color: white;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.24);
+    }
+  }
+}
+
+@mixin lang-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //min-width: 123px;
+  min-width: 140px;
+  //height: 175px;
+  border-radius: 0 0 9px 9px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ffffff;
+  border-color: #ffffff;
+  padding: 18px 0 18px 0;
+  margin-top: 20px;
+}
+
+@mixin lang-dropdown-item {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3f3e45;
+  padding: 12px 20px 12px 20px;
+}
+
+//navbar css
+
+.accio-navbar {
+  height: 98px;
+  background-color: #c19d29;
+  z-index: 999;
+  .accio-navbar-main {
+    height: 90px;
+    background-color: #595959;
+    color: #b3b3b3;
+    padding: 0 5px 0px 14px;
+    width: 100%;
+  }
+
+  .navbar-brand.accio-header {
+    margin-left: 13px;
+  }
+
+  .navbar-right-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  //css properties for each component in navbar
+  .each {
+    margin: 0 10px 0 10px;
+    color: white;
+  }
+
+  .line {
+    height: 100%;
+    width: 1px;
+    border: 1px solid #ffffff;
+    opacity: 0.05;
+    transform: rotate(0deg);
+  }
+
+  //language dropdown css
+  .ui.selection.dropdown.lang-dropdown {
+    @include lang-dropdown;
+  }
+
+  .ui.active.selection.dropdown.lang-dropdown {
+    @include lang-dropdown;
+    .menu {
+      @include lang-dropdown-menu;
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      .item {
+        @include lang-dropdown-item;
+        &:hover {
+          background-color: #f9f9f9;
+        }
+      }
+      .active.selected.item {
+        @include lang-dropdown-item;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .ui.selection.visible.dropdown > .text {
+    font-weight: 500 !important;
+    color: white !important;
+    margin-right: 3px !important;
+  }
+  .ui.selection.dropdown > .text {
+    margin-right: 3px !important;
+  }
+
+  // .ui.selection.dropdown {
+  //   display: flex;
+  //   align-items: center;
+  //   &:after {
+  //     margin-left: 10px;
+  //     content: $whiteDownArrow;
+  //     justify-content: flex-end;
+  //   }
+  // }
+
+  // .ui.active.selection.dropdown {
+  //   display: flex;
+  //   align-items: center;
+  //   &:after {
+  //     margin-left: 10px;
+  //     content: $yellowUpArrow;
+  //     justify-content: flex-end;
+  //   }
+  // }
+
+  .ui.selection.dropdown > .dropdown.icon:before {
+    content: $whiteDownArrow;
+    //display: none;
+  }
+
+  .ui.active.selection.dropdown > .dropdown.icon:before {
+    content: $yellowUpArrow;
+    //display: none;
+  }
+}

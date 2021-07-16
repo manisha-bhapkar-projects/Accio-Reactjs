@@ -1,0 +1,47 @@
+@import '../../styles/main.scss';
+
+.search-component {
+  margin-right: 20px;
+  .header-searchbar {
+    margin-right: -25px;
+    &::after {
+      position: relative;
+      height: 23px;
+      width: 23px;
+      top: 5px;
+      right: 37px;
+      content: url('../../images/search/black/search-copy.png');
+      opacity: none;
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5) !important;
+      opacity: 0.5;
+    }
+    &:focus::placeholder {
+      color: rgba(0, 0, 0, 0.87) !important;
+      opacity: 0.8;
+    }
+    .search-bar {
+      width: 243px;
+      height: 42px;
+      border-radius: 3px;
+      border: solid 1px #b2b2b5;
+      background-color: #ffffff;
+      padding: 10px;
+      padding-right: 34px;
+      color: #89888c;
+      font-family: Roboto;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 19px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .search-btn {
+    width: fit-content;
+    @include clickable-icon-btn;
+  }
+}

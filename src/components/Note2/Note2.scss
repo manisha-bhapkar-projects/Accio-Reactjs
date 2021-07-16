@@ -1,0 +1,16 @@
+.note2-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .icon-color {
+    margin-right: 10px;
+  }
+  .note2-text {
+    color: #595959;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+}

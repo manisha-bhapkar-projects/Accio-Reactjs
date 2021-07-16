@@ -1,0 +1,98 @@
+.card-header-div {
+  display: flex;
+  justify-content: space-between;
+  .header-title {
+    .card-header-title {
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #c19d29;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 16px;
+      text-transform: uppercase;
+      // margin-left: 10px;
+    }
+    .card-header-bottom-border {
+      width: 52px;
+      height: 3px;
+      opacity: 0.55;
+      border-radius: 2px;
+      background-color: #666666;
+      margin-top: 7px;
+      margin-left: 2px;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    .label-icon {
+      margin-right: 30px;
+      .add-more-button:focus {
+        outline: none;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    .download-file-icon {
+      margin-right: 30px;
+      height: 16px;
+      width: 16px;
+    }
+    .download-file-text {
+      color: #00467f;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 16px;
+      text-align: right;
+      padding-right: 5px;
+    }
+    .search-tab {
+      margin-right: -10px;
+
+      &::after {
+        position: relative;
+        top: 2px;
+        right: 27px;
+        content: url('../../images/search/SearchSmall/Shape.png');
+        opacity: none;
+      }
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5) !important;
+        opacity: 0.5;
+      }
+      &:focus::placeholder {
+        color: rgba(0, 0, 0, 0.87) !important;
+        opacity: 0.8;
+      }
+      .search-bar {
+        height: 42px;
+        width: 243px;
+        border: 1px solid #b2b2b5;
+        border-radius: 3px;
+        background-color: #ffffff;
+        padding: 10px;
+        padding-right: 32px;
+        color: #89888c;
+        font-family: Roboto;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 19px;
+        padding-right: 11%;
+        &:focus {
+          outline: none;
+          appearance: none;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+}

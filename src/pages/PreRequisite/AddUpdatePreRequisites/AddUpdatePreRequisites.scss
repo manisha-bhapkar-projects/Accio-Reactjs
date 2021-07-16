@@ -1,0 +1,71 @@
+@import '../../../styles/main.scss';
+@import '../../../styles/table.scss';
+
+.add-update-prerequisites {
+  .card {
+    @include card-container;
+  }
+  .prerequisite-name-fields {
+    margin-top: 30px;
+    display: flex;
+    .prerequisite-name {
+      width: 332px;
+      @include largeDevice {
+        width: calc(332px + 2vw);
+      }
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .prerequisite-field {
+    width: 200px;
+    @include largeDevice {
+      width: calc(200px + 2vw);
+    }
+  }
+
+  .add-update-prerequisite-table {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .rdt_Table {
+      border-left: 1px solid rgba(198, 199, 201, 0.4);
+      border-right: 1px solid rgba(198, 199, 201, 0.4);
+    }
+
+    @include table-container;
+    .add-update-prerequisite-table-header-row {
+      @include table-header-row;
+      border-bottom: 1px solid #d2d2d4;
+      .header-row-item {
+        @include table-header-item;
+      }
+    }
+    .add-update-prerequisite-content {
+      .add-update-prerequisite-content-row {
+        @include table-content-row;
+        .content-row-item {
+          @include table-content-item;
+        }
+      }
+    }
+  }
+  .add-update-prerequisite-buttons {
+    @include btn-group;
+    margin-top: 30px;
+    .btn-cancel {
+      @include btn-cancel;
+      margin-right: 10px;
+    }
+    .btn-save-close {
+      @include btn-save-close;
+      margin-right: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+@import '../../../../../styles/main.scss';
+@import '../../../../../styles/table.scss';
+
+.sub-component {
+  padding: 30px;
+  // input[type='date']::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+  // input[type='date']::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+  // input[type='date']::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  //   color: transparent;
+  //   background-color: red;
+  // }
+  // input[type='date']::-webkit-inner-spin-button,
+  // input[type='date']::-webkit-calendar-picker-indicator {
+  //   display: none;
+  //   -webkit-appearance: none;
+  // }
+  // input[type='date']:focus:before,
+  // input[type='date']:valid:before {
+  //   content: 'Select Date' !important;
+  // }
+  // input[type='date']:in-range::-webkit-datetime-edit-year-field,
+  // input[type='date']:in-range::-webkit-datetime-edit-month-field,
+  // input[type='date']:in-range::-webkit-datetime-edit-day-field,
+  // input[type='date']:in-range::-webkit-datetime-edit-text {
+  //   // color: transparent;
+  //   display: none;
+  // }
+  .custom-date-icon {
+    background-image: url('../../../../../images/calender/calendar-icon_inactive.png');
+    background-position: 90%;
+    // background-size: 50px 50px;
+    background-repeat: no-repeat;
+    // color: transparent;
+  }
+  .custom-date-icon:focus {
+    // outline: none;
+    box-shadow: none;
+  }
+  .form-control:focus {
+    // outline: none;
+    box-shadow: none;
+  }
+  .heading {
+    display: flex;
+    color: #595959;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 0.98px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  .custom-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .custome-col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .date {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 140px;
+    flex: 0 0 140px;
+    max-width: 140px;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  .cheque-number {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+
+  .notes {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 460px;
+    flex: 0 0 460px;
+    max-width: 460px;
+    margin-top: 30px;
+  }
+  #input-type-file {
+    display: none;
+  }
+  .scan-copy-class {
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  .btn-upload {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 24px;
+    // width: 80px;
+    height: 42px;
+    border-radius: 3px;
+    border: 2px solid #595959;
+    color: #161038;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  .checkbox-input {
+    cursor: auto !important;
+  }
+}

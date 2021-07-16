@@ -1,0 +1,81 @@
+@import '../../../../../../../../styles/main.scss';
+@import '../../../../../../../../styles/table.scss';
+
+.add-pre-approvad-contractor {
+  min-width: 1030px;
+  @include tablet {
+    min-width: 844px;
+  }
+  .search-box {
+    margin: 30px 0;
+  }
+
+  .delete-button {
+    @include clickable-icon-btn;
+  }
+  .added-pre-approved-contractor-table {
+    .rdt_TableBody {
+      margin-right: -10px;
+    }
+  }
+
+  .add-from-pre-approvad-contractor-table {
+    .rdt_TableBody {
+      margin-right: -10px;
+    }
+    .rdt_TableHeadRow {
+      .rdt_TableCol:first-child {
+        // visibility: hidden;
+        display: none;
+      }
+      .rdt_TableCol:nth-child(2) {
+        padding-right: 56px;
+      }
+    }
+  }
+
+  .select-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 18px 0 50px 0;
+    .btn-select {
+      &.btn {
+        @include btn(40px, 76px);
+      }
+      &.btn-secondary {
+        @include btn-secondary;
+      }
+    }
+  }
+  .submit-buttom-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    .btn-cancel {
+      margin-right: 10px;
+      &.btn {
+        @include btn(40px, 80px);
+      }
+      &.btn-secondary {
+        @include btn-secondary;
+      }
+    }
+    .btn-new-contractor {
+      margin-right: 10px;
+      &.btn {
+        @include btn(40px, auto);
+      }
+      &.btn-secondary {
+        @include btn-secondary;
+      }
+    }
+    .btn-submit {
+      &.btn {
+        @include btn(40px, auto);
+      }
+      &.btn-primary {
+        @include btn-primary;
+      }
+    }
+  }
+}

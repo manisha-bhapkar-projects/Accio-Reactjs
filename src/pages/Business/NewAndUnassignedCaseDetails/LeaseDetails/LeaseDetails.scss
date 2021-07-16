@@ -1,0 +1,66 @@
+@import '../../../../styles/main.scss';
+
+.lease-details {
+  .lease-details-card {
+    @include card-container;
+    margin-bottom: 30px;
+    .edit-btn-div {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      .edit-btn {
+        @include clickable-icon-btn;
+      }
+    }
+    .lease-details-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+
+      .lease-details-item {
+        width: 191px;
+        margin-right: 29px;
+        margin-bottom: 20px;
+        @include largeDevice {
+          width: calc(191px + 2vw);
+        }
+        .lease-details-dropdown {
+          width: 191px;
+          @include largeDevice {
+            width: calc(191px + 2vw);
+          }
+        }
+      }
+    }
+
+    .lease-details-section.edit {
+      .lease-details-item.edit {
+        order: 1;
+        &.break {
+          flex-basis: 100%;
+          height: 0;
+          margin-bottom: 0px;
+        }
+      }
+      .lease-details-item {
+        order: 2;
+      }
+    }
+
+    .lease-details-save {
+      @include btn-group;
+      //margin-top: 30px;
+      .btn-cancel {
+        @include btn-cancel;
+        margin-right: 10px;
+      }
+      .btn-save-close {
+        @include btn-save-close;
+        margin-right: 10px;
+      }
+      .btn-save-submit {
+        @include btn-save-submit;
+      }
+    }
+  }
+}

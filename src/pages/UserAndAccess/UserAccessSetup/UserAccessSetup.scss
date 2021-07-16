@@ -1,0 +1,38 @@
+@import '../../../styles/main.scss';
+
+.user-access-setup {
+  .card {
+    @include card-container;
+    margin-bottom: 30px;
+  }
+  .username-detail {
+    width: 197px;
+    @include largeDevice {
+      width: calc(197px + 2vw);
+    }
+    margin-right: 30px;
+  }
+  .wizard {
+    margin: 30px 0px;
+  }
+  .access-and-setup-button-container {
+    @include btn-group();
+    // padding-top: 30px;
+    .btn-cancel {
+      @include btn-cancel();
+      margin-left: 10px;
+    }
+    .btn-save-close {
+      @include btn-save-close();
+      margin-left: 10px;
+    }
+    .btn-skip-and-continue {
+      @include btn-skip-and-continue;
+      margin-left: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit();
+      margin-left: 10px;
+    }
+  }
+}

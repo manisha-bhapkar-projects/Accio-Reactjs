@@ -1,0 +1,16 @@
+@import '../../../../styles/main.scss';
+@import '../../../../styles/table.scss';
+
+#step-2-design-form {
+  display: flex;
+  flex-direction: column;
+  .design-form-language-switcher {
+    margin-top: 50px;
+  }
+  .editor-input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../styles/login-main.scss';
+
+.login {
+  .dropdown-component-with-search-bar {
+    width: 100% !important;
+  }
+  .dropdown-submit {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .select-company {
+    .dropdown-component {
+      width: 100%;
+    }
+    a {
+      @include login-input-text;
+    }
+  }
+  .login-field {
+    .login-input-label {
+      @include login-input-label;
+      text-transform: unset;
+      // @include tablet {
+      //   margin-top: 38px; //basically 75% if the original
+      // }
+    }
+
+    .input-text {
+      @include login-input-text;
+    }
+  }
+  .login-navs {
+    text-align: right;
+    margin-top: 16px;
+    margin-bottom: 25px;
+    .forgot-password-text {
+      @include links;
+    }
+  }
+
+  p span {
+    color: gray;
+    font-weight: normal;
+  }
+
+  .common-error-div {
+    font-family: Roboto;
+    font-size: 14px;
+    min-height: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #fc5e34;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

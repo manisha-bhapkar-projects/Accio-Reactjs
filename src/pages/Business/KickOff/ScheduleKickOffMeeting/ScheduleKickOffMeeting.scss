@@ -1,0 +1,111 @@
+@import '../../../../styles/main.scss';
+@import '../../../../styles/table.scss';
+
+.Schedule-KickOff-Meeting {
+  // Card
+
+  .form-control {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  label {
+    color: #89888c !important;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 0.98px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+  .card-container {
+    @include card-container();
+    min-height: 568px;
+
+    .step-container {
+      max-width: 1040px;
+    }
+  }
+  // Buttons
+  .button-container {
+    @include btn-group();
+    padding-top: 30px;
+    .btn-cancel {
+      @include btn-cancel();
+      margin-left: 10px;
+    }
+    .btn-save-close {
+      @include btn-save-close();
+      margin-left: 10px;
+    }
+    .btn-skip-and-continue {
+      @include btn-skip-and-continue();
+      margin-left: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit();
+      margin-left: 10px;
+    }
+    .btn-submit {
+      @include btn-save-submit();
+      margin-left: 10px;
+      @include btn(40px, 108px);
+      @include btn-primary;
+      cursor: pointer;
+    }
+  }
+  // .input-time{
+  //   margin-top: auto;
+  // }
+  .rc-time-picker {
+    width: 120px;
+  }
+
+  .start-date {
+    display: flex;
+    margin-top: 20px;
+    // max-width: 25%;
+  }
+  .end-date {
+    display: none;
+    // max-width: 25%;
+  }
+  .custom-date-icon {
+    background-image: url('../../../../images/calender/calendar-icon_inactive.png'); //calendar-icon_inactive
+    background-position: 90%;
+    // background-size: 50px 50px;
+    background-repeat: no-repeat;
+    // color: transparent;
+  }
+  .custom-date-icon:focus {
+    // outline: none;
+    box-shadow: none;
+  }
+  // input[type='time']::-webkit-inner-spin-button,
+  // input[type='time']::-webkit-outer-spin-button {
+  //   -webkit-appearance: none;
+  //   -moz-appearance: none;
+  //   appearance: none;
+  //   margin: 0;
+  // }
+  input[type='time']::-webkit-inner-spin-button,
+  input[type='time']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background: #fff url('../../../../images/arrow/up-down.png') no-repeat
+      center center;
+    width: 10px;
+    height: auto;
+    margin-right: 11px;
+    opacity: 1;
+  }
+  .message-section {
+    small {
+      margin-top: -15px !important;
+      float: left;
+    }
+  }
+}

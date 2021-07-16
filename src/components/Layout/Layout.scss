@@ -1,0 +1,68 @@
+@import '../../styles/main.scss';
+// .layout-with-sidebar{
+
+//   position: relative;
+//   min-height: 100vh;
+//   .content{
+//     padding-bottom: 50px;
+//     margin-left: 60px;
+//     &.active{
+//       margin-left: 226px;
+//     }
+//   }
+//   .footer{
+//     margin-left: 45px;
+//     &.active{
+//       margin-left: 211px;
+//     }
+//   }
+// }
+
+@include screen-1920-above {
+  .layout {
+    max-width: 1920px;
+
+    margin-left: calc((100vw - 1920px) / 2);
+    header {
+      max-width: 1920px;
+    }
+  }
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f5f6fa;
+
+  .header {
+    height: 98px;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+  }
+  .content {
+    flex-grow: 1;
+    margin-top: 98px;
+    // margin: 30px 30px 0px 30px;
+
+    // @include tablet {
+    //   margin: 23px 23px 0px 23px;
+    // }
+  }
+  .footer-layout {
+    background-color: #dfe0e5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    .footer-content {
+      color: #000000;
+      font-family: Roboto;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-left: 30px;
+    }
+  }
+}

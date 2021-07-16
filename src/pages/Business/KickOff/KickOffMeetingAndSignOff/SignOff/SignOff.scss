@@ -1,0 +1,45 @@
+@import '../../../../../styles/main.scss';
+
+.sign-off {
+  padding: 30px;
+  .card-container {
+    @include card-container();
+    .note-label {
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+    .note-content {
+      padding: 30px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #595959;
+    }
+    .file-upload {
+      padding-left: 30px;
+    }
+  }
+  // Buttons
+  .button-container {
+    @include btn-group();
+    padding-top: 30px;
+    .btn-cancel {
+      @include btn-cancel();
+      margin-left: 10px;
+    }
+    .btn-save-close {
+      @include btn(40px, auto);
+      @include btn-secondary;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .btn-save-submit {
+      @include btn-save-submit();
+      margin-left: 10px;
+    }
+  }
+}

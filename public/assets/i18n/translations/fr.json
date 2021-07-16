@@ -1,0 +1,159 @@
+{
+  "GLOBAL": {
+    "ACTION_DELETE": "Supprimer",
+    "ACTION_EDIT": "Éditer",
+    "ACTION_CREATE_COPY": "Créer une copie",
+    "BUTTON_SAVE_AND_CLOSE": "Sauver et fermer",
+    "BUTTON_SAVE_AND_CONTINUE": "Sauvegarder et continuer",
+    "BUTTON_SKIP_AND_CONTINUE": "Passer et continuer",
+    "BUTTON_SAVE_AND_SUMIT": "Sauvegarder et soumettre",
+    "BUTTON_CANCEL": "Annuler",
+    "BUTTON_SUBMIT": "Soumettre",
+    "BUTTON_EDIT": "Éditer",
+    "THIS_FIELD_IS_MANDATORY": "Ce champ est obligatoire",
+    "SUCCESS": "SUCCÈS",
+    "INFORMATION": "INFORMATION",
+    "ERROR": "ERREUR",
+    "YES": "Oui",
+    "NO": "Non",
+    "OK": "D'accord",
+    "BUTTON_SELECT": "sélectionner"
+  },
+  "ADMIN": {
+    "WORKFLOW": {
+      "PREVIEW": "Aperçu",
+      "PRE-REQUISITES": "CONDITIONS PRÉALABLES",
+      "UPLOAD": "Télécharger"
+    }
+  },
+  "KICK_OFF": {
+    "KICK_OFF_MEETING_AND_SIGN_OFF": {
+      "RECORD_ATTENDEES": "Enregistrer les participants",
+      "REVIEW_AND_UPDATE_DATES": "Examiner et mettre à jour les dates",
+      "ADD_NOTES_AND_COMMENTS": "Ajouter des notes et des commentaires",
+      "PREVIEW_MOM_AND_SIGN_OFF": "Aperçu de maman et déconnexion",
+      "STEP_1": {
+        "COL_1": "NOM",
+        "COL_2": "COMPAGNIE",
+        "COL_3": "EMAIL",
+        "COL_4": "RÔLE",
+        "COL_5": "ASSISTÉ?",
+        "ADD_MORE_ROWS": "Ajouter plus de lignes",
+        "ATTENDEES_NOT_FOUND": "ATTENTIFS NON TROUVÉS"
+      },
+      "STEP_3": {
+        "NOTES_LABEL": "AJOUTER DES NOTES ET COMMENTAIRES (FACULTATIF)",
+        "LENGTH_OF_NOTES": 500
+      },
+      "STEP_4": {
+        "SIGN": "Signe",
+        "PDF": {
+          "KICK_OFF_MEETING": "الإجتماع الإفتتاحي",
+          "DATE": "تاريخ:",
+          "TIME": "زمن:",
+          "PROPERTY": "خاصية:",
+          "CUSTOMER": "العميل:",
+          "BRAND": "العلامة التجارية:",
+          "UNIT": "وحدة:",
+          "FITOUT_PERIOD": "فترة الفتح:",
+          "CASE": "قضية #:",
+          "ATTENDEES": "الحاضرين:",
+          "NAME": "اسم",
+          "ROLE": "وظيفة",
+          "ORGANISATION": "منظمة",
+          "ATTENDED": "حضرها؟",
+          "NOTES_AND_COMMENTS": "ملاحظات وتعليقات",
+          "SCHEDULE": "الجدول الزمني الذي تمت مراجعته والاتفاق عليه:",
+          "PHASES": "المرحلة / الموضوع",
+          "BUDGETED_DATE": "تاريخ اكتمال الميزانية",
+          "PLANNED_DATE": "تاريخ الإتمام المخطط",
+          "COMMENTS": "تعليقات",
+          "SIGNED": "موقعة من قبل",
+          "PAGE": "الصفحة",
+          "OF": "من",
+          "ON_BEHALF": "نيابة عن"
+        }
+      }
+    },
+    "ASSIGN_TEAM": {
+      "COMPLETION_DATE": "DATE D'ACHÈVEMENT DU LANCEMENT",
+      "ASSIGN_BY_DATE": "ATTRIBUER PAR DATE",
+      "COL_1": "RÔLE",
+      "COL_2": "NOM",
+      "COL_3": "EMAIL",
+      "COL_4": "CONTACT",
+      "NO_TEAM_ASSIGNED": "Aucune équipe affectée",
+      "ROLES_NOT_FOUND": "Roles not found",
+      "NAMES_NOT_FOUND": "Names not found",
+      "ADD_TEAM": "Ajouter une équipe",
+      "ADD_TENANT_TEAM": "Ajouter une équipe de locataires",
+      "ADD_MORE_ROWS": "Ajouter plus de lignes",
+      "ASSIGN_OWNER_TEAM_MEMBER": {
+        "TEAM_ASSIGNED": "Équipe assignée"
+      },
+      "ASSIGN_TENANT_TEAM_MEMBER": {
+        "ADD_PRE_APPROVED_CONTRACTORS": "Ajouter des entrepreneurs pré-approuvés",
+        "ADD_NEW_CONTRACTORS": "Ajouter de nouveaux entrepreneurs",
+        "ADD_MORE_CONTRACTORS": "Ajouter plus de lignes",
+        "ADD_NEW_CONTRACTOR_TITLE": "AJOUTER UN NOUVEAU CONTRACTANT",
+        "ADD_PRE_APPROVED_CONTRACTOR": {
+          "TITLE": "LISTE PRÉ-APPROUVÉE DES ENTREPRENEURS EN AMÉNAGEMENT ET DES SOUS-TRAITANTS MEP",
+          "CONTRACTOR": "PRESTATAIRE",
+          "NAME": "NOM",
+          "CONTACT": "CONTACT",
+          "EMAIL": "EMAIL",
+          "SELECTED": "CHOISIE",
+          "ADD_NEW_CONTRACTOR": "Ajouter un nouvel entrepreneur",
+          "ADD_PRE_APPROVED_CONTRACTOR": "Ajouter des entrepreneurs pré-approuvés"
+        },
+        "ADD_NEW_CONTRACTOR": {
+          "NOTE": "Veuillez noter que l'ajout d'un nouvel entrepreneur est soumis à approbation et pourrait retarder le lancement de la phase de conception.",
+          "CONTRACTOR_NAME": "NOM DE L'ENTREPRENEUR",
+          "CONTACT_PERSON": "CONTACT PERSON",
+          "EMAIL": "email",
+          "PHONE": "téléphone (bureau)",
+          "MOBILE": "téléphone (portable)",
+          "LICENCE": "Licence Commerciale #",
+          "LICENCE_NAME": "nom de la licence commerciale",
+          "JUSTIFICATION": "justification",
+          "TRADE_LICENCE": "Licence commerciale",
+          "OTHER_ATTACHMENT": "autres pièces jointes (ceci est facultatif)",
+          "ERROR_MSG": {
+            "CONTRACTOR_NAME_IS_REQUIRED": "Le nom de l'entrepreneur est requis",
+            "CONTACT_PERSON_IS_REQUIRED": "Personne de contact est requise",
+            "EMAIL_IS_REQUIRED": "Email est requis",
+            "OFFICE_PHONE_IS_REQUIRED": "Le numéro de téléphone du bureau est requis",
+            "MOBILE_NUMBER_IS_REQUIRED": "Le numéro de portable est requis",
+            "TRADE_LICENSE_IS_REQUIRED": "Une licence commerciale est requise",
+            "TRADE_LICENSE_NAME_IS_REQUIRED": "Le nom de la licence commerciale est requis",
+            "JUSTIFICATION_IS_REQUIRED": "Une justification est requise"
+          }
+        }
+      }
+    },
+    "ADD_UPDATE_MILESTONES": {
+      "SELECT_WORKFLOW": "SELECT WORKFLOW",
+      "TABLE": {
+        "PHASE": "PHASE",
+        "BUDGETED_COMPLETION": "BUDGETED COMPLETION",
+        "PLANNED_COMPLETION": "PLANNED COMPLETION",
+        "ACTUAL_COMPLETION": "ACTUAL COMPLETION",
+        "COMMENTS_TENANT": "COMMENTS - TENANT",
+        "COMMENTS_OWNER": "COMMENTS - OWNER"
+      }
+    },
+    "SCHEDULE_KICK_OFF_MEETING": {
+      "ATTENDESS": "ATTENDESS",
+      "DATE": "DATE",
+      "START_TIME": "START TIME",
+      "END_TIME": "END TIME",
+      "LOCATION": "LOCATION",
+      "MESSAGE": "MESSAGE"
+    }
+  },
+  "COMPONENTS": {
+    "LANGUAGE_SWITCHER": {
+      "LABEL": "SWITCH TO"
+    }
+  }
+}

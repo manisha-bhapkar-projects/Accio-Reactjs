@@ -1,0 +1,84 @@
+@import '../../../../../../../styles/main.scss';
+@import '../../../../../../../styles/table.scss';
+@import '../../../../../../../styles/form.scss';
+
+.new-contractor-container {
+  .note-div {
+    height: 52px;
+    min-width: 689px;
+    border-radius: 3px;
+    background-color: #ededed;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .icon-color {
+      height: 32px;
+      width: 32px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .note-text {
+      height: 32px;
+      width: 627px;
+      color: #3f3e45;
+      font-family: Roboto;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 16px;
+      p {
+        white-space: pre-line;
+      }
+    }
+  }
+  .new-contractor-form {
+    background-color: #ffffff;
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+    .form-input-large {
+      @include form-input(685px, 42px);
+    }
+    .form-textarea-large {
+      @include form-input(685px, 82px);
+      padding-top: 9px;
+      padding-left: 13px;
+      padding-left: 17px;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    .form-input-medium {
+      @include form-input(332px, 42px);
+    }
+    .form-file-label {
+      @include file-input-label();
+    }
+    .form-file-input {
+      @include form-file-input(355px, 42px, 244px, 93px);
+    }
+    .padding-top {
+      padding-top: 10px;
+    }
+  }
+  .pre-approved-buttons {
+    padding-top: 30px;
+    .btn {
+      $btn-height: 40px;
+      $btn-width: 93px;
+      @include btn($btn-height, $btn-width);
+      margin-left: 10px;
+      &.btn-primary {
+        @include btn-primary;
+      }
+      &.btn-secondary {
+        @include btn-secondary;
+      }
+    }
+  }
+}

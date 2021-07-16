@@ -1,0 +1,102 @@
+@import '../../styles/main.scss';
+
+#wizard {
+  @mixin active-wizard {
+    .btn-circle {
+      color: #1f467f !important;
+      border-color: #1f467f !important;
+    }
+    p {
+      color: #1f467f !important;
+    }
+    cursor: pointer;
+  }
+  .stepwizard-step {
+    float: left;
+    text-align: center;
+    position: relative;
+    &:focus {
+      outline: none;
+    }
+  }
+  .stepwizard-step:hover {
+    @include active-wizard;
+  }
+  #Wizard .current {
+    @include active-wizard;
+  }
+  .stepwizard-step:before {
+    top: 25px;
+    // bottom: 0;
+    position: absolute;
+    content: '';
+    // width: 100%;
+    width: 100%;
+    height: 2px;
+    background-color: #b9b7c3;
+    left: 50%;
+    z-index: 2;
+    opacity: 0.4;
+  }
+  .stepwizard-step:after {
+    position: absolute;
+    top: 23px;
+    content: '';
+    margin-left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #d9dce6;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 10;
+  }
+
+  .stepwizard-step:last-child::after {
+    display: none;
+  }
+  .stepwizard-step:last-child::before {
+    display: none;
+  }
+
+  .btn-circle {
+    text-align: center;
+    padding: 7px 7px;
+    // padding-left: -10px !important;
+    position: relative;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #b9b7c3;
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b9b7c3;
+  }
+  p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #595959;
+    text-transform: uppercase;
+    // padding-left: 40px !important;
+    // padding-right: 30px !important;
+    // display: inherit;
+    white-space: pre-line;
+  }
+  .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}

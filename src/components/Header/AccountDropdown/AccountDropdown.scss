@@ -1,0 +1,86 @@
+$whiteDownArrow: url('../../../images/arrow/white/down/path-copy-2.png');
+$yellowUpArrow: url('../../../images/arrow/yellow/up/path-copy-5.png');
+
+@mixin account-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: -16px;
+  left: auto;
+  margin-top: 20px;
+  border-radius: 0 0 9px 9px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.24);
+  padding: 12px 0 12px 0;
+}
+
+.acc-dropdown {
+  .btn.acc-dropdown-btn {
+    background: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    .dropdown-label {
+      display: inline-block;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      background-color: #bbb;
+      border-radius: 50%;
+      color: #595959;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.89px;
+      line-height: 19px;
+      padding-top: 10px;
+    }
+    &::after {
+      content: $whiteDownArrow;
+      margin-left: 16px;
+    }
+  }
+
+  .btn {
+    height: 50px;
+  }
+
+  .btn.acc-dropdown-btn:focus {
+    box-shadow: none;
+    .dropdown-label {
+      background-color: #ffcc25;
+    }
+    &::after {
+      content: $yellowUpArrow;
+    }
+  }
+
+  .dropdown-menu.account-dropdown-menu-admin.show {
+    @include account-dropdown-menu;
+    width: 265px;
+  }
+
+  .dropdown-menu.account-dropdown-menu.show {
+    @include account-dropdown-menu;
+    width: 195px;
+  }
+
+  .dropdown-item {
+    color: #3f3e45;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin: 12px 0 12px 0px;
+    &:active {
+      background-color: transparent;
+      outline: none;
+    }
+    &:hover {
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+  }
+}

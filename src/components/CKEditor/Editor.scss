@@ -1,0 +1,62 @@
+.editor-with-label {
+  .ck-editor__editable {
+    min-height: 230px;
+    height: 230px;
+  }
+  .editor-label {
+    color: #595959;
+    font-family: Roboto;
+    font-size: 12px;
+  }
+  .content-length {
+    // text-align: end;
+    display: flex;
+    color: #b2b2b5;
+    font-family: Roboto;
+    font-size: 10px;
+    letter-spacing: 0;
+    padding: 0px;
+  }
+  .content-length span {
+    text-align: end;
+    align-self: end;
+    flex: 1;
+  }
+  .error {
+    color: #fc5e34;
+  }
+  .editor-jodit {
+    &.error {
+      .jodit-container {
+        border-color: #fc5e34;
+      }
+    }
+  }
+  .helper-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #595959;
+    &.error {
+      color: #fc5e34;
+    }
+  }
+}
+// for solve overflow from bottom issue
+.jodit-wysiwyg {
+  margin-bottom: 3px !important;
+}
+
+.jodit-tooltip {
+  // style of tooltip is not proper
+  // position: absolute !important;
+  display: none;
+}
+
+.jodit-editor__resize a {
+  display: none;
+}

@@ -1,0 +1,33 @@
+@import '../../styles/main.scss';
+
+.upload-data {
+  .card-container {
+    @include card-container();
+    margin: 30px;
+  }
+  .upload-data-container {
+    .input-field {
+      width: 300px;
+      margin-top: 20px;
+    }
+    .file-input-field {
+      padding-top: 9px;
+    }
+    .upload-data-error-text {
+      font-family: Roboto;
+      font-size: 14px;
+      letter-spacing: 0;
+      color: red;
+    }
+    .button-container {
+      @include btn-group;
+      margin-right: 30px;
+      .btn {
+        &.btn-primary {
+          @include btn(40px, 130px);
+          @include btn-primary;
+        }
+      }
+    }
+  }
+}
